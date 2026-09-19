@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f7f7f5">
+  <meta name="description" content="栖记 Terria 详细使用说明：按功能路径介绍宠物档案、照料记录、环境、耗材、专业档案、提醒、iCloud 与备份。">
+  <link rel="canonical" href="https://hanchuan8.github.io/terria-privacy/guide.html">
+  <title>栖记 Terria 使用说明</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="guide-page">
+  <input class="language-control" type="radio" name="language" id="language-zh" checked>
+  <input class="language-control" type="radio" name="language" id="language-en">
+
+  <div class="page-shell guide-shell">
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="栖记 Terria 首页">栖记 <span>Terria</span></a>
+      <nav class="site-nav" aria-label="站点导航">
+        <a href="./"><span class="nav-zh">隐私政策</span><span class="nav-en">Privacy</span></a>
+        <a href="./guide.html" aria-current="page"><span class="nav-zh">使用说明</span><span class="nav-en">User Guide</span></a>
+      </nav>
+      <nav class="language-switch" aria-label="Language">
+        <label for="language-zh">中文</label><span aria-hidden="true">/</span><label for="language-en">English</label>
+      </nav>
+    </header>
+
+    <main class="guide-main">
+      <article class="manual manual-zh" lang="zh-CN">
+        <header class="manual-hero">
+          <p class="manual-kicker">栖记 · Terria</p>
+          <h1>详细使用说明</h1>
+          <p class="manual-lead">这份说明按 App 中的真实入口编写。每一节都先给出功能路径，再说明具体操作、保存结果和需要注意的边界。</p>
+          <div class="manual-meta">
+            <span>适用于 iOS 版 1.0.1（Build 9）及相近版本</span>
+            <span>最后更新：2026 年 9 月 19 日</span>
+          </div>
+          <div class="notice-card">
+            <strong>先记住两件事</strong>
+            <p>栖记无需注册即可使用，数据默认保存在本机。iCloud 同步默认关闭，只有你在设置中主动开启后，档案和记录才会进入当前 Apple 账户的 iCloud 私有数据库。</p>
+          </div>
+        </header>
+
+        <nav class="manual-toc" aria-label="使用说明目录">
+          <strong>目录</strong>
+          <ol>
+            <li><a href="#start-zh">开始使用</a></li>
+            <li><a href="#overview-zh">概览与今日照料</a></li>
+            <li><a href="#pets-zh">宠物档案</a></li>
+            <li><a href="#care-zh">记录照料与批量操作</a></li>
+            <li><a href="#enclosure-zh">饲养箱与环境</a></li>
+            <li><a href="#history-zh">过往记录</a></li>
+            <li><a href="#inventory-zh">耗材、库存与成本</a></li>
+            <li><a href="#professional-zh">专业档案</a></li>
+            <li><a href="#reminders-zh">提醒与关注项</a></li>
+            <li><a href="#appearance-zh">个性化、语言与单位</a></li>
+            <li><a href="#icloud-zh">iCloud 同步</a></li>
+            <li><a href="#backup-zh">备份、恢复与导出</a></li>
+            <li><a href="#pro-zh">栖记 Pro 与购买</a></li>
+            <li><a href="#delete-zh">删除与历史追溯</a></li>
+            <li><a href="#help-zh">常见问题</a></li>
+          </ol>
+        </nav>
+
+        <section id="start-zh" class="manual-section">
+          <div class="section-number">01</div>
+          <h2>开始使用</h2>
+          <h3>认识五个底栏入口</h3>
+          <div class="route-grid">
+            <div><b>概览</b><span>查看今天的照料、设施维护、成长摘要和最近动态。</span></div>
+            <div><b>宠物</b><span>管理宠物卡片、档案、饲养箱和专业记录。</span></div>
+            <div><b>过往</b><span>按日期查看、筛选、编辑或删除历史记录。</span></div>
+            <div><b>耗材</b><span>管理食品、药品、垫材、设备、库存和成本。</span></div>
+            <div><b>设置</b><span>管理提醒、外观、语言、同步、备份、Pro 和法律信息。</span></div>
+          </div>
+
+          <h3>第一次添加宠物</h3>
+          <p class="path"><span>路径</span>概览右上角“+” → 添加宠物</p>
+          <ol class="steps">
+            <li>填写名称，然后进入“物种”选择页。可按中文、英文或特征搜索，也可按守宫、蛇类、蜥蜴、龟鳖等分类筛选。</li>
+            <li>按需填写品系／变异、性别、获取来源和购入价格。除名称与物种外，大多数信息可稍后补充。</li>
+            <li>填写入手日期、出生日期、当前体重和当前体长；单位会跟随“设置 → 单位系统”。</li>
+            <li>已有饲养箱时可直接分配；没有时先选择“暂不分配”，保存后再建立饲养箱。</li>
+            <li>分别设置喂食、换水、清洁计划。每项都可以独立选择“间隔”或“循环”模式。</li>
+            <li>点击“保存”。宠物会出现在“宠物”页，体重或体长初始值会进入成长记录。</li>
+          </ol>
+          <div class="tip"><b>间隔与循环</b><span>间隔模式中 0 表示每天；循环模式适合“连续执行 N 天、休息 N 天”的节奏。喂食、换水、清洁彼此独立，不会互相覆盖。</span></div>
+
+          <h3>添加饲养箱</h3>
+          <p class="path"><span>路径</span>概览右上角“+” → 添加饲养箱</p>
+          <ol class="steps">
+            <li>填写名称、类型和尺寸。</li>
+            <li>可分配宠物，并记录加热、UVB、日间／夜间目标温度和湿度区间。</li>
+            <li>保存后，箱体可用于环境读数、设备维护、耗材更换和批量照料。</li>
+          </ol>
+        </section>
+
+        <section id="overview-zh" class="manual-section">
+          <div class="section-number">02</div>
+          <h2>概览与今日照料</h2>
+          <h3>查看指定日期</h3>
+          <p class="path"><span>路径</span>概览 → 顶部日期条 → 选择日期</p>
+          <p>日期下方有内容标记时，表示当天存在照料计划、用药或复诊事项。切换日期后，“今日照料”会同步显示该日内容；未来日期也可以用于查看计划。</p>
+
+          <h3>处理照料事项</h3>
+          <p class="path"><span>路径</span>概览 → 今日照料卡片 → 今日照料</p>
+          <ol class="steps">
+            <li>顶部汇总会显示照料总数、待处理、已完成和涉及宠物数量。</li>
+            <li>点击事项右侧圆圈完成任务。需要补充食物、重量、照片或异常信息时，进入编辑表单后再保存。</li>
+            <li>点击顶栏日期按钮可切换到其他日期；点击编辑按钮可新增或调整当天事项。</li>
+          </ol>
+
+          <h3>设施维护与成长概览</h3>
+          <p>“设施维护”显示 UVB 灯等设备距下次维护的天数；“成长概览”显示近期体重或体长变化。点击对应卡片可进入相关饲养箱或宠物档案查看详情。</p>
+        </section>
+
+        <section id="pets-zh" class="manual-section">
+          <div class="section-number">03</div>
+          <h2>宠物档案</h2>
+          <h3>查找、排序和切换布局</h3>
+          <p class="path"><span>路径</span>底栏“宠物” → 左上角排序／筛选</p>
+          <ul>
+            <li>排序可选择自定义、名称、最近添加或照料状态，并可进入“调整自定义顺序”拖动排序。</li>
+            <li>筛选可按宠物／箱体及宠物状态缩小范围。</li>
+            <li>显示模式可在双列卡片和紧凑列表之间切换，两个模式共用同一批档案。</li>
+          </ul>
+
+          <h3>编辑档案</h3>
+          <p class="path"><span>路径</span>宠物 → 选择宠物 → 右上角编辑</p>
+          <ol class="steps">
+            <li>点击头像可拍照或选择照片，并在裁切页拖动、缩放。</li>
+            <li>在“卡片颜色”中选择自动色、预设色或系统自定义颜色。三种方式互斥。</li>
+            <li>修改名称、物种、品系、性别、来源、价格、状态、饲养箱、日期、体重、体长和备注。</li>
+            <li>“生理绝食／冬化休眠”开启后，会降低未进食提醒权重，适合冬化或发情期；它不是医疗诊断。</li>
+            <li>在“照料周期”分别修改喂食、换水和清洁模式，最后点击“完成”。</li>
+          </ol>
+
+          <h3>查看饲养成本</h3>
+          <p class="path"><span>路径</span>宠物 → 选择宠物 → 饲养成本</p>
+          <p>成本汇总包含购入价格，以及与该宠物或其饲养箱关联的食品、药品、垫材等消耗成本。只有库存已设置价格并通过记录扣减时，消耗才会进入成本统计。</p>
+        </section>
+
+        <section id="care-zh" class="manual-section">
+          <div class="section-number">04</div>
+          <h2>记录照料与批量操作</h2>
+          <h3>快捷记录</h3>
+          <p class="path"><span>路径</span>概览右上角“+” → 选择记录类型</p>
+          <p>可记录喂食、体重、蜕皮、排泄、换水、清洁、环境读数，以及使用／更换耗材。也可以在宠物卡片上长按进入针对该宠物的快捷记录。</p>
+
+          <h3>记录单次喂食</h3>
+          <p class="path"><span>路径</span>“+” → 喂食</p>
+          <ol class="steps">
+            <li>选择宠物和发生时间。</li>
+            <li>选择饵料类型，并自由选择按“只、份、克或毫升”记录；可另外填写总重量。</li>
+            <li>选择正常进食、辅助喂食、主动拒食或喂后吐食。</li>
+            <li>如需自动扣库存，选择匹配计量方式的饵料，并确认“已消耗、放回库存或已丢弃”。</li>
+            <li>按需填写补剂、备注和照片，然后保存。</li>
+          </ol>
+          <div class="tip"><b>进食结果不等于库存结果</b><span>例如拒食后可以把饵料放回，也可以标记丢弃；只有“已消耗”或“已丢弃”才会扣减库存并计入成本。</span></div>
+
+          <h3>批量照料</h3>
+          <p class="path"><span>路径</span>概览右上角“+” → 批量照料</p>
+          <ol class="steps">
+            <li>选择喂食、换水或清洁，并按饲养箱或物种分组。</li>
+            <li>批量喂食时选择饵料种类、计量单位、每只喂食量和可选库存。</li>
+            <li>勾选本次需要处理的宠物；未勾选的不会生成记录。</li>
+            <li>逐只选择完成、拒食、跳过或异常，确认后点击“提交”。</li>
+          </ol>
+        </section>
+
+        <section id="enclosure-zh" class="manual-section">
+          <div class="section-number">05</div>
+          <h2>饲养箱与环境</h2>
+          <h3>查看和编辑饲养箱</h3>
+          <p class="path"><span>路径</span>宠物 → 切换到饲养箱筛选 → 选择饲养箱</p>
+          <p>饲养箱详情汇总尺寸、关联宠物、设备、目标温湿度、最近读数和维护状态。编辑箱体时修改关联宠物，会同步更新宠物的箱体归属。</p>
+
+          <h3>添加环境读数</h3>
+          <p class="path"><span>路径</span>概览“+” → 环境读数，或 宠物／饲养箱详情 → 环境</p>
+          <ol class="steps">
+            <li>选择饲养箱、日期和时间。</li>
+            <li>填写温度、湿度及可选备注。</li>
+            <li>保存后会进入环境趋势；超出目标区间时可能生成环境异常。</li>
+          </ol>
+
+          <h3>处理环境异常</h3>
+          <p class="path"><span>路径</span>设置 → 环境异常处理</p>
+          <p>可根据最新读数刷新异常，查看进行中和历史异常。正常读数会按规则关闭对应异常；App 只提供记录和提示，不能代替现场检查设备与宠物状态。</p>
+        </section>
+
+        <section id="history-zh" class="manual-section">
+          <div class="section-number">06</div>
+          <h2>过往记录</h2>
+          <p class="path"><span>路径</span>底栏“过往”</p>
+          <ol class="steps">
+            <li>时间线默认把最新日期放在顶部。同一天的记录也按最新时间优先。</li>
+            <li>点击顶栏日期按钮打开日历；没有内容的日期会禁用。</li>
+            <li>点击筛选按钮按记录类型筛选，或使用“回到今天”。</li>
+            <li>点击记录查看详情；通过详情页的“编辑”修改内容，或使用菜单标记完成／未完成。</li>
+            <li>删除记录后，它会进入“设置 → 历史追溯与回收站”；关联的库存消耗会尝试回滚。</li>
+          </ol>
+        </section>
+
+        <section id="inventory-zh" class="manual-section">
+          <div class="section-number">07</div>
+          <h2>耗材、库存与成本</h2>
+          <h3>添加耗材</h3>
+          <p class="path"><span>路径</span>底栏“耗材” → 右上角“+”</p>
+          <ol class="steps">
+            <li>选择食品、药品、垫材或设备，填写名称。</li>
+            <li>填写购买数量和购买单位，例如 2 袋、1 盒或 1 瓶。</li>
+            <li>食品、药品和垫材可再设置每个购买单位的实际含量，并选择只、份、克或毫升作为消耗单位。</li>
+            <li>填写购买价格后，系统会按实际消耗量换算成本。</li>
+            <li>按需开启低库存提醒、关联饲养箱和更换周期，然后保存。</li>
+          </ol>
+
+          <h3>使用或更换耗材</h3>
+          <p class="path"><span>路径</span>概览“+” → 使用／更换耗材</p>
+          <ol class="steps">
+            <li>选择库存项目和实际使用数量。</li>
+            <li>指定宠物或饲养箱。若宠物已关联箱体，作用范围会规范为整个箱体；直接选择箱体也会覆盖箱内宠物。</li>
+            <li>垫材消耗可同时刷新该箱体的更换状态。保存失败或库存不足时，不会只完成一半。</li>
+          </ol>
+
+          <h3>查看库存流水</h3>
+          <p class="path"><span>路径</span>耗材 → 某项右侧“管理”</p>
+          <p>“消耗耗材”用于实际使用并要求指定对象；“其他记账”用于入库、报废、盘点调整等。流水会保留数量、单位、时间、关联记录和回滚状态。</p>
+        </section>
+
+        <section id="professional-zh" class="manual-section">
+          <div class="section-number">08</div>
+          <h2>专业档案</h2>
+          <p class="path"><span>路径</span>宠物 → 选择宠物 → 专业档案</p>
+          <div class="route-grid two-column">
+            <div><b>就诊记录</b><span>记录机构、医生、症状、诊断、处置、费用、复诊日期和附件。</span></div>
+            <div><b>用药疗程</b><span>建立剂量计划，按“已服、漏服、跳过”执行并在结束时回顾。</span></div>
+            <div><b>检疫流程</b><span>管理检疫检查项、结果备注、照片和解除记录。</span></div>
+            <div><b>谱系</b><span>关联父本、母本和遗传备注，查看家系关系。</span></div>
+            <div><b>繁育与窝蛋</b><span>记录配对、产蛋、逐蛋状态、出壳，并为幼体建立档案。</span></div>
+            <div><b>专业导出</b><span>按用途生成可分享的档案；分享前请核对隐私和授权。</span></div>
+          </div>
+          <div class="notice-card compact">
+            <strong>医疗边界</strong>
+            <p>这些功能用于整理记录，不提供诊断、处方或治疗建议。出现异常或紧急情况时，请联系合格的异宠兽医。</p>
+          </div>
+        </section>
+
+        <section id="reminders-zh" class="manual-section">
+          <div class="section-number">09</div>
+          <h2>提醒与关注项</h2>
+          <h3>开启日常提醒</h3>
+          <p class="path"><span>路径</span>设置 → 照料提醒</p>
+          <p>先开启“日常照料提醒”，再设置提醒时间及喂食、换水、清洁、用药剂量和复诊提醒。首次开启时需要允许 iOS 通知权限。</p>
+
+          <h3>调整关注阈值</h3>
+          <p class="path"><span>路径</span>设置 → 专业工具 → 关注项阈值</p>
+          <p>阈值用于控制体重、环境、未进食等关注提示。通知可能因系统权限、低电量模式或设备状态延迟，请始终以人工检查为准。</p>
+        </section>
+
+        <section id="appearance-zh" class="manual-section">
+          <div class="section-number">10</div>
+          <h2>个性化、语言与单位</h2>
+          <h3>个性化</h3>
+          <p class="path"><span>路径</span>设置 → 个性化</p>
+          <ul>
+            <li>选择跟随系统、浅色或深色外观。</li>
+            <li>选择预设强调色，或使用色板末尾的系统自定义取色器。</li>
+            <li>决定应用背景是否跟随强调色，并选择浅色背景预设。</li>
+            <li>开启或关闭性别符号颜色。</li>
+            <li>选择首页状态卡背景图片，进入 16:9 裁切页拖动和缩放；图片只保存在本机，除非你主动把照片同步选项打开。</li>
+          </ul>
+
+          <h3>语言与单位</h3>
+          <p class="path"><span>路径</span>设置 → 语言 / 单位系统</p>
+          <p>语言可跟随系统，也可在 App 内选择简体中文、繁體中文、English、日本語、한국어、Español、Русский或ไทย。单位系统会影响重量、长度和温度的输入与显示，但不会改写你保存的业务含义。</p>
+        </section>
+
+        <section id="icloud-zh" class="manual-section">
+          <div class="section-number">11</div>
+          <h2>iCloud 同步</h2>
+          <p class="path"><span>路径</span>设置 → 数据管理 → iCloud 同步</p>
+          <ol class="steps">
+            <li>打开“iCloud 同步”。首次安装时默认关闭；开启前请确认系统已登录 iCloud，并为栖记开放 iCloud 权限。</li>
+            <li>主同步包含宠物、照料、任务、环境、医疗、检疫、繁育、耗材、审计和回收站数据。</li>
+            <li>照片同步是单独的开关，默认关闭。关闭它不会删除本机照片，也不会上传或下载照片。</li>
+            <li>点击“立即同步”可手动执行。App 启动、回到前台或本机成功保存后也会按条件同步。</li>
+            <li>离线时可继续记录；重新联网后按单条档案合并。同一条内容发生冲突时，以最近修改为准。</li>
+          </ol>
+          <div class="tip"><b>不是实时协作</b><span>当前没有后台静默推送。另一台设备的修改通常会在本机下次进入前台或手动同步时获取。</span></div>
+        </section>
+
+        <section id="backup-zh" class="manual-section">
+          <div class="section-number">12</div>
+          <h2>备份、恢复与导出</h2>
+          <h3>完整备份</h3>
+          <p class="path"><span>路径</span>设置 → 数据管理 → 导出完整备份（ZIP）</p>
+          <p>ZIP 会包含档案、照料日志和关联原图。文件先在本机生成，之后由你通过系统分享面板保存到“文件”、隔空投送或其他目标。</p>
+
+          <h3>定期自动备份</h3>
+          <p class="path"><span>路径</span>设置 → 数据管理 → 定期自动备份</p>
+          <p>开启后选择间隔天数。自动备份保存在本机可管理的位置；设置页会显示最近备份和失败状态。仍建议定期把重要备份复制到你信任的外部位置。</p>
+
+          <h3>从备份恢复</h3>
+          <p class="path"><span>路径</span>设置 → 数据管理 → 从备份恢复</p>
+          <ol class="steps">
+            <li>选择栖记 ZIP 备份包或旧版 JSON 档案。</li>
+            <li>核对内容概览。恢复会覆盖当前本机数据和照片。</li>
+            <li>确认“覆盖并恢复”。系统会先创建本地安全回退副本，再执行完整性检查和恢复。</li>
+          </ol>
+
+          <h3>表格和月报</h3>
+          <ul>
+            <li><b>CSV：</b>设置 → 数据管理 → 导出明细表格，可在 Excel 或 Numbers 中分析。</li>
+            <li><b>PDF：</b>设置 → 数据管理 → 生成照料月报，用于查看或分享阶段摘要。</li>
+          </ul>
+        </section>
+
+        <section id="pro-zh" class="manual-section">
+          <div class="section-number">13</div>
+          <h2>栖记 Pro 与购买</h2>
+          <p class="path"><span>路径</span>设置 → 栖记 Pro</p>
+          <p>免费版最多管理 3 只活跃宠物，基础档案、照料记录、提醒和备份不会因未订阅而删除。Pro 页面会显示当前可售的月订阅、年订阅和永久买断，实际价格和币种由 Apple 根据 App Store 地区提供。</p>
+          <ul>
+            <li>点击方案后，使用“解锁栖记 Pro”发起 Apple 内购。</li>
+            <li>已购买但未识别时，点击“恢复购买”。恢复会请求 Apple 重新核对当前账户权益。</li>
+            <li>订阅用户可从 Pro 页面进入 Apple 的订阅管理界面切换或取消方案。</li>
+            <li>永久买断不会自动续费。当前 Pro 权益不包含未来可能推出的 AI 服务和相关用量。</li>
+          </ul>
+        </section>
+
+        <section id="delete-zh" class="manual-section">
+          <div class="section-number">14</div>
+          <h2>删除与历史追溯</h2>
+          <h3>删除宠物</h3>
+          <p class="path"><span>路径</span>宠物 → 选择宠物 → 编辑 → 删除此爬宠档案</p>
+          <p>宠物档案删除属于高影响操作，相关照料记录与照片会一并处理。操作前建议先导出完整备份。</p>
+
+          <h3>恢复误删记录</h3>
+          <p class="path"><span>路径</span>设置 → 流程与追溯 → 历史追溯与回收站</p>
+          <p>这里可以查看被删除的记录并按支持范围恢复。恢复记录时，相关库存与照片引用会按现有数据关系重新校验。</p>
+
+          <h3>删除 App</h3>
+          <p>删除 App 会移除其本机应用空间中的数据；已导出的 ZIP、JSON、CSV 或 PDF，以及已同步到 iCloud 私有数据库的内容，不会因删除本机 App 自动全部消失。</p>
+        </section>
+
+        <section id="help-zh" class="manual-section">
+          <div class="section-number">15</div>
+          <h2>常见问题与排查</h2>
+          <details>
+            <summary>为什么首页没有显示某一天的照料计划？</summary>
+            <p>先确认概览顶部选中的日期，再进入宠物“编辑 → 照料周期”检查该项目的间隔／循环和周期开始日期。临时调整可在“宠物详情 → 照料计划 → 添加临时调整”中查看。</p>
+          </details>
+          <details>
+            <summary>为什么库存没有自动扣减？</summary>
+            <p>检查库存是否启用了实际消耗单位、喂食记录使用的单位是否匹配，以及记录中是否选择了库存项目和“已消耗／已丢弃”。“放回库存”不会扣减。</p>
+          </details>
+          <details>
+            <summary>为什么提醒没有出现？</summary>
+            <p>检查“设置 → 照料提醒”总开关和分类开关，再到 iOS“设置 → 通知 → 栖记”确认权限。系统仍可能延迟通知，请不要把通知作为唯一照护依据。</p>
+          </details>
+          <details>
+            <summary>为什么 iCloud 显示不可用或同步失败？</summary>
+            <p>确认系统已登录 iCloud、iCloud Drive 可用、网络正常，并在同步页点击“立即同步”。关闭同步不会删除本机数据。持续失败时先导出完整备份，再联系开发者并提供不含私人档案的错误文字。</p>
+          </details>
+          <details>
+            <summary>为什么价格显示美元或其他币种？</summary>
+            <p>内购价格由 Apple 按当前 App Store 商店地区返回，与 App 语言或系统地区不一定相同。请检查“设置 → Apple 账户 → 媒体与购买项目”的商店地区。</p>
+          </details>
+          <details>
+            <summary>如何联系开发者？</summary>
+            <p>路径为“设置 → 关于 栖记 · Terria → 联系开发者”，会打开邮件并发送至开发者邮箱。也可使用本网站的 <a href="https://github.com/hanchuan8/terria-privacy/issues" target="_blank" rel="noopener noreferrer">GitHub Issues</a>，但请勿公开上传照片、备份或个人信息。</p>
+          </details>
+        </section>
+      </article>
+
+      <article class="manual manual-en" lang="en">
+        <header class="manual-hero">
+          <p class="manual-kicker">Terria</p>
+          <h1>Detailed User Guide</h1>
+          <p class="manual-lead">This guide follows the actual navigation in the app. Each section starts with a feature path, then explains the steps, saved result, and important limitations.</p>
+          <div class="manual-meta">
+            <span>For iOS version 1.0.1 (Build 9) and nearby versions</span>
+            <span>Last updated: September 19, 2026</span>
+          </div>
+          <div class="notice-card">
+            <strong>Two things to know first</strong>
+            <p>You can use Terria without an account. Data stays on the device by default. iCloud Sync is off by default; records enter the private iCloud database of the current Apple Account only after you enable it.</p>
+          </div>
+        </header>
+
+        <nav class="manual-toc" aria-label="User guide contents">
+          <strong>Contents</strong>
+          <ol>
+            <li><a href="#start-en">Getting started</a></li>
+            <li><a href="#overview-en">Overview and daily care</a></li>
+            <li><a href="#pets-en">Pet profiles</a></li>
+            <li><a href="#care-en">Care records and batch actions</a></li>
+            <li><a href="#enclosure-en">Enclosures and environment</a></li>
+            <li><a href="#history-en">History</a></li>
+            <li><a href="#inventory-en">Supplies, inventory, and cost</a></li>
+            <li><a href="#professional-en">Professional records</a></li>
+            <li><a href="#reminders-en">Reminders and attention items</a></li>
+            <li><a href="#appearance-en">Personalization, language, and units</a></li>
+            <li><a href="#icloud-en">iCloud Sync</a></li>
+            <li><a href="#backup-en">Backup, restore, and export</a></li>
+            <li><a href="#pro-en">Terria Pro and purchases</a></li>
+            <li><a href="#delete-en">Deletion and recovery</a></li>
+            <li><a href="#help-en">Troubleshooting</a></li>
+          </ol>
+        </nav>
+
+        <section id="start-en" class="manual-section">
+          <div class="section-number">01</div>
+          <h2>Getting started</h2>
+          <h3>The five tabs</h3>
+          <div class="route-grid">
+            <div><b>Overview</b><span>Today’s care, maintenance, growth summary, and recent activity.</span></div>
+            <div><b>Pets</b><span>Pet profiles, cards, enclosures, and professional records.</span></div>
+            <div><b>History</b><span>Browse, filter, edit, or delete records by date.</span></div>
+            <div><b>Supplies</b><span>Food, medication, substrate, equipment, inventory, and cost.</span></div>
+            <div><b>Settings</b><span>Reminders, appearance, language, sync, backups, Pro, and legal information.</span></div>
+          </div>
+          <h3>Add your first pet</h3>
+          <p class="path"><span>Path</span>Overview “+” → Add Pet</p>
+          <ol class="steps">
+            <li>Enter a name and select a species. Search by Chinese name, English name, or trait, or filter by category.</li>
+            <li>Optionally enter morph, sex, source, and purchase price.</li>
+            <li>Add acquired date, birth date, current weight, and current length. Units follow Settings → Unit System.</li>
+            <li>Assign an existing enclosure or choose Not Assigned and create one later.</li>
+            <li>Configure feeding, water-change, and cleaning schedules independently in interval or cycle mode.</li>
+            <li>Tap Save. Initial weight and length values also become growth records.</li>
+          </ol>
+          <div class="tip"><b>Interval vs. cycle</b><span>In interval mode, 0 means every day. Cycle mode repeats active days followed by rest days. Feeding, water, and cleaning never overwrite one another.</span></div>
+          <h3>Add an enclosure</h3>
+          <p class="path"><span>Path</span>Overview “+” → Add Enclosure</p>
+          <ol class="steps">
+            <li>Enter its name, type, and dimensions.</li>
+            <li>Optionally assign a pet and configure heating, UVB, and day/night temperature and humidity targets.</li>
+            <li>Save it for environment readings, maintenance, supply replacement, and grouped care.</li>
+          </ol>
+        </section>
+
+        <section id="overview-en" class="manual-section">
+          <div class="section-number">02</div>
+          <h2>Overview and daily care</h2>
+          <h3>View another date</h3>
+          <p class="path"><span>Path</span>Overview → date strip → select a date</p>
+          <p>A content marker means that date contains care, medication, or follow-up items. Selecting a date refreshes the care card, including future plans.</p>
+          <h3>Complete care items</h3>
+          <p class="path"><span>Path</span>Overview → care card → Daily Care</p>
+          <ol class="steps">
+            <li>The summary shows total, pending, completed, and affected pets.</li>
+            <li>Tap the circle to complete a simple item. Open the form first when you need food, amount, photos, or an exception.</li>
+            <li>Use the date button for another day and the edit button to add or adjust items.</li>
+          </ol>
+          <h3>Maintenance and growth</h3>
+          <p>Maintenance shows days until equipment service, such as UVB replacement. Growth highlights recent weight or length changes. Tap a card to open the related enclosure or pet.</p>
+        </section>
+
+        <section id="pets-en" class="manual-section">
+          <div class="section-number">03</div>
+          <h2>Pet profiles</h2>
+          <h3>Find and arrange pets</h3>
+          <p class="path"><span>Path</span>Pets → top-left Sort / Filter</p>
+          <ul>
+            <li>Sort by custom order, name, date added, or care status. Adjust Custom Order lets you drag every pet into place.</li>
+            <li>Filter by pets/enclosures and status.</li>
+            <li>Switch between two-column cards and a compact list without changing the stored profiles.</li>
+          </ul>
+          <h3>Edit a profile</h3>
+          <p class="path"><span>Path</span>Pets → choose a pet → Edit</p>
+          <ol class="steps">
+            <li>Tap the portrait to take or choose a photo, then drag and zoom in the crop screen.</li>
+            <li>Choose automatic, preset, or custom card color. The three choices are mutually exclusive.</li>
+            <li>Edit identity, source, purchase, status, enclosure, dates, measurements, and notes.</li>
+            <li>Physiological Fasting / Brumation lowers the weight of missed-feeding alerts; it is not medical advice.</li>
+            <li>Edit the three schedules independently and tap Done.</li>
+          </ol>
+          <h3>View keeping cost</h3>
+          <p class="path"><span>Path</span>Pets → choose a pet → Keeping Cost</p>
+          <p>The total includes purchase price and priced food, medication, or substrate consumed by the pet or its enclosure. A cost appears only when an inventory item has a price and is deducted through a record.</p>
+        </section>
+
+        <section id="care-en" class="manual-section">
+          <div class="section-number">04</div>
+          <h2>Care records and batch actions</h2>
+          <h3>Quick record</h3>
+          <p class="path"><span>Path</span>Overview “+” → choose a record type</p>
+          <p>Record feeding, weight, shedding, waste, water, cleaning, environment readings, or supply use/replacement. You can also long-press a pet card for pet-specific quick actions.</p>
+          <h3>Record feeding</h3>
+          <p class="path"><span>Path</span>“+” → Feeding</p>
+          <ol class="steps">
+            <li>Select pet and time.</li>
+            <li>Select prey and freely record count, portion, grams, or milliliters. Total prey weight is optional.</li>
+            <li>Choose normal feeding, assisted feeding, refusal, or regurgitation.</li>
+            <li>For inventory deduction, select a compatible item and mark Consumed, Returned, or Discarded.</li>
+            <li>Add supplements, notes, or photos and save.</li>
+          </ol>
+          <div class="tip"><b>Feeding result differs from stock result</b><span>A refused item may be returned or discarded. Only consumed or discarded material reduces stock and contributes to cost.</span></div>
+          <h3>Batch care</h3>
+          <p class="path"><span>Path</span>Overview “+” → Batch Care</p>
+          <ol class="steps">
+            <li>Choose feeding, water, or cleaning and group by enclosure or species.</li>
+            <li>For feeding, choose prey, unit, per-pet amount, and optional inventory.</li>
+            <li>Check only the pets included in this batch.</li>
+            <li>Set each outcome to Done, Refused, Skipped, or Abnormal, then Submit.</li>
+          </ol>
+        </section>
+
+        <section id="enclosure-en" class="manual-section">
+          <div class="section-number">05</div>
+          <h2>Enclosures and environment</h2>
+          <h3>Open an enclosure</h3>
+          <p class="path"><span>Path</span>Pets → Enclosure filter → choose an enclosure</p>
+          <p>The detail view combines dimensions, pets, equipment, target ranges, recent readings, and maintenance. Reassigning a pet updates both sides of the relationship.</p>
+          <h3>Add an environment reading</h3>
+          <p class="path"><span>Path</span>Overview “+” → Environment Reading, or Pet/Enclosure → Environment</p>
+          <ol class="steps">
+            <li>Select enclosure, date, and time.</li>
+            <li>Enter temperature, humidity, and optional notes.</li>
+            <li>Save to update trends. Out-of-range values may create an incident.</li>
+          </ol>
+          <h3>Environment incidents</h3>
+          <p class="path"><span>Path</span>Settings → Environment Incidents</p>
+          <p>Refresh incidents from readings and inspect open or historical items. A normal reading may close the matching incident. Always inspect the actual enclosure and animal.</p>
+        </section>
+
+        <section id="history-en" class="manual-section">
+          <div class="section-number">06</div>
+          <h2>History</h2>
+          <p class="path"><span>Path</span>History tab</p>
+          <ol class="steps">
+            <li>Newest dates and newest records within a day appear first.</li>
+            <li>Use the date button; dates without content are disabled.</li>
+            <li>Use Filter or Return to Today.</li>
+            <li>Open a record for details and editing, or mark it complete/incomplete from its menu.</li>
+            <li>Deleted records move to Settings → Audit Trail & Trash. Linked inventory is restored when possible.</li>
+          </ol>
+        </section>
+
+        <section id="inventory-en" class="manual-section">
+          <div class="section-number">07</div>
+          <h2>Supplies, inventory, and cost</h2>
+          <h3>Add an item</h3>
+          <p class="path"><span>Path</span>Supplies → “+”</p>
+          <ol class="steps">
+            <li>Choose Food, Medication, Substrate, or Equipment and enter a name.</li>
+            <li>Enter purchase quantity and unit, such as two bags, one box, or one bottle.</li>
+            <li>For consumables, enter content per purchase unit and choose count, portion, grams, or milliliters.</li>
+            <li>Add purchase price to calculate cost from actual consumption.</li>
+            <li>Optionally enable low-stock alerts, enclosure association, and replacement period.</li>
+          </ol>
+          <h3>Use or replace supplies</h3>
+          <p class="path"><span>Path</span>Overview “+” → Use / Replace Supplies</p>
+          <ol class="steps">
+            <li>Select the item and actual amount.</li>
+            <li>Choose a pet or enclosure. A pet assigned to an enclosure resolves to that enclosure and its pets.</li>
+            <li>Substrate use can refresh replacement state. Insufficient stock or a save error rolls back the whole operation.</li>
+          </ol>
+          <h3>Inventory ledger</h3>
+          <p class="path"><span>Path</span>Supplies → Manage beside an item</p>
+          <p>Use Consume Supplies for real use with a required target. Use Other Entry for restock, disposal, or count correction. The ledger retains quantity, unit, time, relationships, and rollback state.</p>
+        </section>
+
+        <section id="professional-en" class="manual-section">
+          <div class="section-number">08</div>
+          <h2>Professional records</h2>
+          <p class="path"><span>Path</span>Pets → choose a pet → Professional Records</p>
+          <div class="route-grid two-column">
+            <div><b>Visits</b><span>Clinic, clinician, symptoms, diagnosis, treatment, cost, follow-up, and attachments.</span></div>
+            <div><b>Medication</b><span>Dose schedules, Taken/Missed/Skipped execution, and end-of-course review.</span></div>
+            <div><b>Quarantine</b><span>Checklist, notes, photos, and release history.</span></div>
+            <div><b>Pedigree</b><span>Dam, sire, genetic notes, and family relationships.</span></div>
+            <div><b>Breeding and clutches</b><span>Pairing, eggs, per-egg state, hatching, and hatchling profiles.</span></div>
+            <div><b>Professional export</b><span>Create a shareable file after checking consent and privacy.</span></div>
+          </div>
+          <div class="notice-card compact"><strong>Medical boundary</strong><p>These tools organize records; they do not diagnose, prescribe, or replace a qualified exotic-animal veterinarian.</p></div>
+        </section>
+
+        <section id="reminders-en" class="manual-section">
+          <div class="section-number">09</div>
+          <h2>Reminders and attention items</h2>
+          <h3>Enable reminders</h3>
+          <p class="path"><span>Path</span>Settings → Care Reminders</p>
+          <p>Enable Daily Care Reminders, select a time, then configure feeding, water, cleaning, medication-dose, and follow-up reminders. iOS notification permission is required.</p>
+          <h3>Attention thresholds</h3>
+          <p class="path"><span>Path</span>Settings → Professional Tools → Attention Thresholds</p>
+          <p>Thresholds control weight, environment, and missed-feeding alerts. Notifications can be delayed by system conditions, so inspect animals and habitats directly every day.</p>
+        </section>
+
+        <section id="appearance-en" class="manual-section">
+          <div class="section-number">10</div>
+          <h2>Personalization, language, and units</h2>
+          <h3>Personalization</h3>
+          <p class="path"><span>Path</span>Settings → Personalization</p>
+          <ul>
+            <li>Choose System, Light, or Dark appearance.</li>
+            <li>Choose a preset accent or use the system color picker at the end of the palette.</li>
+            <li>Control accent-tinted backgrounds and light background presets.</li>
+            <li>Turn colored sex symbols on or off.</li>
+            <li>Choose and crop a 16:9 home status-card image. It remains local unless photo sync is enabled.</li>
+          </ul>
+          <h3>Language and units</h3>
+          <p class="path"><span>Path</span>Settings → Language / Unit System</p>
+          <p>Follow the system or choose Simplified Chinese, Traditional Chinese, English, Japanese, Korean, Spanish, Russian, or Thai. Unit System changes weight, length, and temperature input and display without rewriting the meaning of stored records.</p>
+        </section>
+
+        <section id="icloud-en" class="manual-section">
+          <div class="section-number">11</div>
+          <h2>iCloud Sync</h2>
+          <p class="path"><span>Path</span>Settings → Data Management → iCloud Sync</p>
+          <ol class="steps">
+            <li>Enable iCloud Sync. It is off on a new install; sign in to iCloud and allow Terria access first.</li>
+            <li>Main sync covers pets, care, tasks, environment, medical, quarantine, breeding, inventory, audit, and trash data.</li>
+            <li>Photo Sync is separate and off by default. Turning it off neither deletes local photos nor uploads/downloads them.</li>
+            <li>Tap Sync Now, or let Terria sync when launched, foregrounded, or after a successful local save.</li>
+            <li>Work offline normally. On reconnect, items merge individually; the latest modification wins for the same item.</li>
+          </ol>
+          <div class="tip"><b>Not real-time collaboration</b><span>There is no background silent push. Changes from another device are normally fetched the next time Terria enters the foreground or you tap Sync Now.</span></div>
+        </section>
+
+        <section id="backup-en" class="manual-section">
+          <div class="section-number">12</div>
+          <h2>Backup, restore, and export</h2>
+          <h3>Complete backup</h3>
+          <p class="path"><span>Path</span>Settings → Data Management → Export Complete Backup (ZIP)</p>
+          <p>The ZIP contains profiles, care logs, and linked original images. It is created locally, then shared to Files, AirDrop, or a destination you choose.</p>
+          <h3>Automatic backup</h3>
+          <p class="path"><span>Path</span>Settings → Data Management → Scheduled Automatic Backup</p>
+          <p>Enable it and select the interval. Settings shows the latest result or failure. Keep an additional copy in a location you trust.</p>
+          <h3>Restore</h3>
+          <p class="path"><span>Path</span>Settings → Data Management → Restore from Backup</p>
+          <ol class="steps">
+            <li>Select a Terria ZIP package or legacy JSON archive.</li>
+            <li>Review the summary. Restore replaces current local data and photos.</li>
+            <li>Confirm Replace and Restore. Terria first makes a local safety copy, validates references, and then restores.</li>
+          </ol>
+          <h3>CSV and PDF</h3>
+          <ul>
+            <li><b>CSV:</b> Settings → Data Management → Export Detailed Spreadsheet.</li>
+            <li><b>PDF:</b> Settings → Data Management → Generate Monthly Care Report.</li>
+          </ul>
+        </section>
+
+        <section id="pro-en" class="manual-section">
+          <div class="section-number">13</div>
+          <h2>Terria Pro and purchases</h2>
+          <p class="path"><span>Path</span>Settings → Terria Pro</p>
+          <p>The free tier supports up to three active pets. Basic profiles, care, reminders, and backups are not deleted when Pro is inactive. Apple supplies current plans, localized prices, currency, and availability.</p>
+          <ul>
+            <li>Select a plan and tap Unlock Terria Pro to use Apple In-App Purchase.</li>
+            <li>Tap Restore Purchases when a prior entitlement is missing.</li>
+            <li>Subscribers can open Apple’s subscription management sheet from the Pro page.</li>
+            <li>Lifetime does not renew. Current Pro benefits do not include any future AI service or usage.</li>
+          </ul>
+        </section>
+
+        <section id="delete-en" class="manual-section">
+          <div class="section-number">14</div>
+          <h2>Deletion and recovery</h2>
+          <h3>Delete a pet</h3>
+          <p class="path"><span>Path</span>Pets → choose a pet → Edit → Delete This Pet Profile</p>
+          <p>This is a high-impact action that also handles related care and photos. Export a complete backup first.</p>
+          <h3>Recover a deleted record</h3>
+          <p class="path"><span>Path</span>Settings → Workflow & Audit → Audit Trail & Trash</p>
+          <p>Review deleted records and restore supported items. Terria revalidates inventory and photo relationships during recovery.</p>
+          <h3>Delete the app</h3>
+          <p>Deleting Terria removes its local app-space data. Exported files and content in the private iCloud database do not necessarily disappear with the local app.</p>
+        </section>
+
+        <section id="help-en" class="manual-section">
+          <div class="section-number">15</div>
+          <h2>Troubleshooting</h2>
+          <details><summary>Why is a scheduled item missing on the Overview?</summary><p>Verify the selected date, then open Pet → Edit → Care Schedules and check the mode and cycle start date. Temporary overrides appear under Pet Detail → Care Plan.</p></details>
+          <details><summary>Why did inventory not decrease?</summary><p>Check the item’s base consumption unit, the unit used in the feeding record, and whether inventory plus Consumed/Discarded was selected. Returned does not reduce stock.</p></details>
+          <details><summary>Why did a reminder not appear?</summary><p>Check Settings → Care Reminders and iOS Settings → Notifications → Terria. System conditions can delay notifications, so never rely on them as the only care check.</p></details>
+          <details><summary>Why is iCloud unavailable or failing?</summary><p>Confirm iCloud sign-in, iCloud Drive, network access, and tap Sync Now. Turning sync off does not remove local data. Export a backup before extended troubleshooting.</p></details>
+          <details><summary>Why is the price in US dollars or another currency?</summary><p>Apple returns prices for the current App Store storefront, which can differ from app language or device region. Check the storefront under Apple Account → Media & Purchases.</p></details>
+          <details><summary>How do I contact the developer?</summary><p>Use Settings → About Terria → Contact Developer. You can also open a <a href="https://github.com/hanchuan8/terria-privacy/issues" target="_blank" rel="noopener noreferrer">GitHub Issue</a>, but never post private photos, backups, or personal information publicly.</p></details>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <span>栖记 · Terria</span>
+      <a href="./">隐私政策 / Privacy Policy</a>
+    </footer>
+  </div>
+</body>
+</html>

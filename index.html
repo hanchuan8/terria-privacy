@@ -17,6 +17,10 @@
   <div class="page-shell">
     <header class="site-header">
       <a class="brand" href="./" aria-label="栖记 Terria 隐私政策首页">栖记 <span>Terria</span></a>
+      <nav class="site-nav" aria-label="站点导航">
+        <a href="./" aria-current="page"><span class="nav-zh">隐私政策</span><span class="nav-en">Privacy</span></a>
+        <a href="./guide.html"><span class="nav-zh">使用说明</span><span class="nav-en">User Guide</span></a>
+      </nav>
       <nav class="language-switch" aria-label="Language">
         <label for="language-zh">中文</label><span aria-hidden="true">/</span><label for="language-en">English</label>
       </nav>
@@ -25,9 +29,9 @@
     <main>
       <article class="policy policy-zh" lang="zh-CN">
         <h1>栖记 Terria 隐私政策</h1>
-        <p class="updated">最后更新日期：2026 年 9 月 14 日</p>
+        <p class="updated">最后更新日期：2026 年 9 月 19 日</p>
         <p>栖记（Terria）是一款面向爬宠饲养者的本地数据优先 iOS 应用。本政策说明当前版本如何处理你在应用中创建的记录、照片、权限和导出文件。</p>
-        <p>我们不要求注册或登录，也不运营用于集中保存你的宠物资料和照料记录的服务器。</p>
+        <p>我们不要求注册或登录，也不运营用于集中保存你的宠物资料和照料记录的自建服务器。你可以选择开启 Apple iCloud 同步；该功能默认关闭。</p>
 
         <hr>
 
@@ -52,7 +56,7 @@
         <hr>
 
         <h2>3. 本地存储与使用方式</h2>
-        <p>当前版本的宠物档案、照料记录、环境数据、专业记录、耗材、照片和应用设置主要保存在你的设备本地应用空间中。</p>
+        <p>当前版本的宠物档案、照料记录、环境数据、专业记录、耗材、照片和应用设置默认保存在你的设备本地应用空间中。若你在“设置 → 数据管理 → iCloud 同步”中主动开启同步，所选数据会保存到当前 Apple 账户的 iCloud 私有数据库，以便在你的设备间同步。</p>
         <p>应用会在本地使用这些信息来维护数据关系、生成趋势和统计、安排本地通知，以及生成 CSV、PDF、JSON 或 ZIP 文件。栖记不会把这些内容上传到栖记运营的服务器。</p>
         <p>当前版本不使用你的记录建立广告画像、出售记录或建立跨应用用户画像。</p>
 
@@ -62,7 +66,7 @@
         <h3>相机</h3>
         <p>只有当你主动选择拍照时，应用才会使用相机，用于给宠物档案或照料记录添加照片。应用不会在后台持续使用相机。</p>
         <h3>照片</h3>
-        <p>只有当你主动选择照片时，应用才会访问你选中的内容。选中的照片会按记录需要保存在本机应用空间中，不会上传到栖记服务器。</p>
+        <p>只有当你主动选择照片时，应用才会访问你选中的内容。选中的照片会按记录需要保存在本机应用空间中，不会上传到栖记服务器。iCloud 照片同步是独立开关并默认关闭；只有你主动开启后，宠物头像和记录附件才会同步到当前 Apple 账户的 iCloud 私有数据库。</p>
         <h3>通知</h3>
         <p>通知权限用于在设备上安排照料、给药或复诊等本地提醒。当前版本不依赖栖记的远程推送服务器。</p>
         <p>当前版本不会主动请求通讯录、位置、健康数据或麦克风权限。你可以随时在 iOS“设置”中管理已授予的权限。</p>
@@ -80,7 +84,7 @@
         <p>当前版本没有栖记服务器上的用户档案，因此没有需要由开发者替你从服务器删除的账号数据。</p>
         <ul>
           <li>你可以在应用内删除宠物、记录、照片或其他本机内容；</li>
-          <li>删除应用会移除其应用空间中的本地数据；</li>
+          <li>删除应用会移除其应用空间中的本地数据，但不会自动保证删除此前已同步到 iCloud 私有数据库或已导出到其他位置的副本；</li>
           <li>你之前导出的 ZIP、JSON、CSV 或 PDF 文件可能仍存在于文件 App、云盘或其他分享目标中，需要你自行删除；</li>
           <li>恢复备份前，应用会按现有流程创建安全回退副本，回退副本也属于本机数据。</li>
         </ul>
@@ -92,11 +96,11 @@
         <p>截至本政策生效日期，当前版本：</p>
         <ul>
           <li>没有接入广告 SDK、行为分析 SDK 或崩溃上报 SDK；</li>
-          <li>没有账号服务、远程数据库或栖记自建用户数据服务器；</li>
+          <li>没有栖记账号服务或栖记自建用户数据服务器；可选 iCloud 同步使用 Apple 提供的私有 CloudKit 数据库；</li>
           <li>不使用广告标识符，不请求跨 App 跟踪权限；</li>
           <li>不把宠物档案、照料记录或照片发送给第三方用于分析或广告。</li>
         </ul>
-        <p>应用使用 Apple 提供的系统能力，例如照片选择器、相机、通知和系统分享面板。你主动选择的分享目标由相应服务方负责。</p>
+        <p>应用使用 Apple 提供的系统能力，例如 iCloud、照片选择器、相机、通知和系统分享面板。iCloud 主同步与照片同步均由你主动开启；你主动选择的同步或分享目标由相应服务方负责。</p>
 
         <hr>
 
@@ -132,9 +136,9 @@
 
       <article class="policy policy-en" lang="en">
         <h1>Terria Privacy Policy</h1>
-        <p class="updated">Last updated: September 14, 2026</p>
+        <p class="updated">Last updated: September 19, 2026</p>
         <p>Terria is a local-first iOS app for reptile keepers. This policy explains how the current version handles records, photos, permissions, and exported files created while you use the app.</p>
-        <p>Terria does not require an account or sign-in, and does not operate a server that centrally stores your pet profiles or care records.</p>
+        <p>Terria does not require an account or sign-in and does not operate its own server for centrally storing pet profiles or care records. You may optionally enable Apple iCloud Sync; it is off by default.</p>
 
         <hr>
 
@@ -159,7 +163,7 @@
         <hr>
 
         <h2>3. Local Storage and Use</h2>
-        <p>In the current version, pet profiles, care records, environment data, professional records, supplies, photos, and app settings are primarily stored in the app’s local storage on your device.</p>
+        <p>In the current version, pet profiles, care records, environment data, professional records, supplies, photos, and app settings are stored in the app’s local storage by default. If you enable sync under Settings → Data Management → iCloud Sync, selected data is also stored in the private iCloud database of the current Apple Account for synchronization across your devices.</p>
         <p>The app uses this information locally to maintain relationships between records, calculate trends and summaries, schedule local notifications, and generate CSV, PDF, JSON, or ZIP files. Terria does not upload this content to a server operated by Terria.</p>
         <p>The current version does not use your records to build advertising profiles, sell your records, or create a cross-app user profile.</p>
 
@@ -169,7 +173,7 @@
         <h3>Camera</h3>
         <p>The app uses the camera only when you actively choose to take a photo for a pet profile or care record. It does not continuously use the camera in the background.</p>
         <h3>Photos</h3>
-        <p>The app accesses photos only when you actively choose them. Selected photos are stored in the local app space as needed for your records and are not uploaded to a Terria server.</p>
+        <p>The app accesses photos only when you actively choose them. Selected photos are stored in the local app space as needed for your records and are not uploaded to a Terria server. iCloud Photo Sync is a separate control and is off by default; pet portraits and record attachments enter the private iCloud database of the current Apple Account only after you enable it.</p>
         <h3>Notifications</h3>
         <p>Notification permission is used to schedule local care, medication, or appointment reminders on your device. The current version does not rely on a Terria remote push server.</p>
         <p>The current version does not actively request access to contacts, location, health data, or the microphone. You can manage granted permissions at any time in iOS Settings.</p>
@@ -187,7 +191,7 @@
         <p>The current version has no user profiles stored on Terria servers, so there is no server account data for the developer to delete on your behalf.</p>
         <ul>
           <li>You can delete pets, records, photos, and other local content in the app;</li>
-          <li>Deleting the app removes data in its local app space;</li>
+          <li>Deleting the app removes data in its local app space, but does not guarantee deletion of copies previously synced to the private iCloud database or exported elsewhere;</li>
           <li>Previously exported ZIP, JSON, CSV, or PDF files may remain in Files, cloud storage, or another sharing destination and must be deleted by you;</li>
           <li>Before a restore, the app creates a safety rollback copy under its existing workflow; that copy is also local device data.</li>
         </ul>
@@ -199,11 +203,11 @@
         <p>As of the effective date of this policy, the current version:</p>
         <ul>
           <li>does not include advertising, behavioral analytics, or crash-reporting SDKs;</li>
-          <li>does not include an account service, remote database, or Terria-operated user-data server;</li>
+          <li>does not include a Terria account service or Terria-operated user-data server; optional iCloud Sync uses Apple’s private CloudKit database;</li>
           <li>does not use an advertising identifier or request cross-app tracking permission;</li>
           <li>does not send pet profiles, care records, or photos to a third party for analytics or advertising.</li>
         </ul>
-        <p>The app uses Apple system capabilities such as the photo picker, camera, notifications, and the system sharing interface. A destination you choose for sharing is responsible for its own service.</p>
+        <p>The app uses Apple system capabilities such as iCloud, the photo picker, camera, notifications, and the system sharing interface. Main iCloud Sync and Photo Sync are both opt-in. A destination you choose for syncing or sharing is responsible for its own service.</p>
 
         <hr>
 

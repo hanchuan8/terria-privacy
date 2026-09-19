@@ -5,6 +5,10 @@
   --muted: #6b6b66;
   --line: #e2e2dd;
   --link: #42423d;
+  --surface: #ffffff;
+  --soft-surface: #f0f3ef;
+  --accent: #4f7953;
+  --accent-soft: #e6efe5;
   --max-width: 43rem;
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
 }
@@ -16,6 +20,10 @@
     --muted: #9a9a94;
     --line: #2d2d29;
     --link: #f0f0eb;
+    --surface: #1a1a18;
+    --soft-surface: #20241f;
+    --accent: #91ba92;
+    --accent-soft: #243226;
   }
 }
 
@@ -66,6 +74,33 @@ body {
   border-bottom: 1px solid var(--line);
 }
 
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-left: auto;
+  font-size: 0.86rem;
+}
+
+.site-nav a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  color: var(--text);
+}
+
+.site-nav a[aria-current="page"] {
+  font-weight: 650;
+}
+
+.nav-en {
+  display: none;
+}
+
 .brand {
   color: var(--text);
   font-size: 0.96rem;
@@ -112,8 +147,16 @@ body {
 }
 
 #language-zh:checked ~ .page-shell .policy-en,
-#language-en:checked ~ .page-shell .policy-zh {
+#language-en:checked ~ .page-shell .policy-zh,
+#language-zh:checked ~ .page-shell .manual-en,
+#language-en:checked ~ .page-shell .manual-zh,
+#language-en:checked ~ .page-shell .nav-zh,
+#language-zh:checked ~ .page-shell .nav-en {
   display: none;
+}
+
+#language-en:checked ~ .page-shell .nav-en {
+  display: inline;
 }
 
 main {
@@ -192,6 +235,278 @@ footer {
   font-size: 0.84rem;
 }
 
+footer a {
+  margin-left: 0.75rem;
+}
+
+/* Detailed user guide */
+.guide-shell {
+  --max-width: 76rem;
+}
+
+.guide-main {
+  padding-top: 2.4rem;
+}
+
+.manual {
+  display: grid;
+  grid-template-columns: minmax(12rem, 16rem) minmax(0, 1fr);
+  column-gap: clamp(2.5rem, 6vw, 5.5rem);
+}
+
+.manual-hero {
+  grid-column: 1 / -1;
+  max-width: 54rem;
+  margin-bottom: 3rem;
+}
+
+.manual-kicker {
+  margin-bottom: 0.35rem;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 750;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.manual-hero h1 {
+  margin-bottom: 0.8rem;
+  font-size: clamp(2rem, 4vw, 3.45rem);
+  letter-spacing: -0.035em;
+}
+
+.manual-lead {
+  max-width: 45rem;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.manual-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin: 1.35rem 0 1.5rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.manual-meta span + span::before {
+  margin-right: 1rem;
+  color: var(--line);
+  content: "•";
+}
+
+.notice-card,
+.tip {
+  border: 1px solid color-mix(in srgb, var(--accent) 22%, var(--line));
+  border-radius: 1rem;
+  background: var(--accent-soft);
+}
+
+.notice-card {
+  max-width: 48rem;
+  padding: 1.1rem 1.25rem;
+}
+
+.notice-card strong {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.notice-card p,
+.tip span {
+  margin: 0;
+  color: var(--muted);
+}
+
+.notice-card.compact {
+  margin-top: 1.25rem;
+}
+
+.manual-toc {
+  grid-column: 1;
+  grid-row: 2 / span 20;
+  align-self: start;
+  position: sticky;
+  top: 1.5rem;
+  padding: 1.15rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: var(--surface);
+  box-shadow: 0 0.8rem 2.2rem rgb(0 0 0 / 0.035);
+}
+
+.manual-toc > strong {
+  display: block;
+  margin-bottom: 0.6rem;
+  font-size: 0.88rem;
+}
+
+.manual-toc ol {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.48;
+}
+
+.manual-toc li + li {
+  margin-top: 0.32rem;
+}
+
+.manual-toc a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.manual-toc a:hover {
+  color: var(--accent);
+}
+
+.manual-section {
+  grid-column: 2;
+  min-width: 0;
+  padding: 0 0 3.25rem;
+  scroll-margin-top: 1.5rem;
+}
+
+.manual-section + .manual-section {
+  padding-top: 3rem;
+  border-top: 1px solid var(--line);
+}
+
+.section-number {
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 750;
+  letter-spacing: 0.13em;
+}
+
+.manual-section h2 {
+  margin-top: 0.25rem;
+  font-size: 1.7rem;
+  letter-spacing: -0.025em;
+}
+
+.manual-section h3 {
+  margin-top: 1.8rem;
+  font-size: 1.05rem;
+}
+
+.path {
+  display: flex;
+  align-items: baseline;
+  gap: 0.65rem;
+  padding: 0.78rem 0.9rem;
+  border-radius: 0.75rem;
+  background: var(--soft-surface);
+  font-size: 0.9rem;
+}
+
+.path span {
+  flex: none;
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.steps {
+  counter-reset: manual-step;
+  padding-left: 0;
+  list-style: none;
+}
+
+.steps li {
+  position: relative;
+  padding-left: 2.35rem;
+  counter-increment: manual-step;
+}
+
+.steps li::before {
+  position: absolute;
+  top: 0.08rem;
+  left: 0;
+  display: grid;
+  width: 1.55rem;
+  height: 1.55rem;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--accent);
+  background: var(--accent-soft);
+  content: counter(manual-step);
+  font-size: 0.72rem;
+  font-weight: 750;
+}
+
+.steps li + li {
+  margin-top: 0.78rem;
+}
+
+.tip {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: 0.85rem;
+  margin: 1.35rem 0;
+  padding: 1rem 1.1rem;
+  font-size: 0.9rem;
+}
+
+.tip b {
+  color: var(--accent);
+}
+
+.route-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.route-grid.two-column {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.route-grid > div {
+  display: flex;
+  min-height: 7.2rem;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 0.9rem;
+  background: var(--surface);
+}
+
+.route-grid b {
+  font-size: 0.94rem;
+}
+
+.route-grid span {
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.manual-section details {
+  border-bottom: 1px solid var(--line);
+}
+
+.manual-section details:first-of-type {
+  border-top: 1px solid var(--line);
+}
+
+.manual-section summary {
+  padding: 1rem 0;
+  cursor: pointer;
+  font-weight: 650;
+}
+
+.manual-section details p {
+  padding: 0 1.25rem 1rem 0;
+  color: var(--muted);
+}
+
 @media (min-width: 640px) {
   html {
     font-size: 18px;
@@ -213,6 +528,78 @@ footer {
   }
 }
 
+@media (max-width: 860px) {
+  .site-header {
+    flex-wrap: wrap;
+  }
+
+  .site-nav {
+    order: 3;
+    width: 100%;
+    justify-content: flex-start;
+    padding-top: 0.7rem;
+    border-top: 1px solid var(--line);
+  }
+
+  .manual {
+    display: block;
+  }
+
+  .manual-hero {
+    margin-bottom: 1.5rem;
+  }
+
+  .manual-toc {
+    position: static;
+    margin-bottom: 2.6rem;
+  }
+
+  .manual-toc ol {
+    columns: 2;
+    column-gap: 2rem;
+  }
+
+  .manual-toc li {
+    break-inside: avoid;
+  }
+}
+
+@media (max-width: 580px) {
+  .guide-main {
+    padding-top: 1.75rem;
+  }
+
+  .manual-toc ol {
+    columns: 1;
+  }
+
+  .manual-meta {
+    display: grid;
+  }
+
+  .manual-meta span + span::before {
+    content: none;
+  }
+
+  .route-grid,
+  .route-grid.two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .route-grid > div {
+    min-height: 0;
+  }
+
+  .tip {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+
+  .path {
+    align-items: flex-start;
+  }
+}
+
 @media print {
   :root {
     color-scheme: light;
@@ -230,6 +617,15 @@ footer {
 
   .language-switch {
     display: none;
+  }
+
+  .site-nav,
+  .manual-toc {
+    display: none;
+  }
+
+  .manual {
+    display: block;
   }
 
   .policy-en {

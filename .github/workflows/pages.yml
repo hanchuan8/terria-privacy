@@ -1,4 +1,4 @@
-name: Deploy privacy policy
+name: Deploy Terria support site
 
 on:
   push:
@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - "index.html"
+      - "guide.html"
       - "styles.css"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
