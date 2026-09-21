@@ -33,12 +33,12 @@
           <h1>详细使用说明</h1>
           <p class="manual-lead">这份说明按 App 中的真实入口编写。每一节都先给出功能路径，再说明具体操作、保存结果和需要注意的边界。</p>
           <div class="manual-meta">
-            <span>适用于 iOS 版 1.0.1（Build 9）及相近版本</span>
-            <span>最后更新：2026 年 9 月 19 日</span>
+            <span>适用于 iOS 版 1.0.1（Build 11）及相近版本</span>
+            <span>最后更新：2026 年 9 月 21 日</span>
           </div>
           <div class="notice-card">
             <strong>先记住两件事</strong>
-            <p>栖记无需注册即可使用，数据默认保存在本机。iCloud 同步默认关闭，只有你在设置中主动开启后，档案和记录才会进入当前 Apple 账户的 iCloud 私有数据库。</p>
+            <p>栖记无需注册即可使用，数据默认保存在本机。个人 iCloud 同步和共同照料空间均默认关闭，只有你主动开启或接受邀请后，相应内容才会进入 Apple 提供的私有或共享 CloudKit 区域。</p>
           </div>
         </header>
 
@@ -58,7 +58,7 @@
             <li><a href="#icloud-zh">iCloud 同步</a></li>
             <li><a href="#backup-zh">备份、恢复与导出</a></li>
             <li><a href="#pro-zh">栖记 Pro 与购买</a></li>
-            <li><a href="#delete-zh">删除与历史追溯</a></li>
+            <li><a href="#delete-zh">删除与备份恢复</a></li>
             <li><a href="#help-zh">常见问题</a></li>
           </ol>
         </nav>
@@ -181,12 +181,9 @@
           <ol class="steps">
             <li>选择饲养箱、日期和时间。</li>
             <li>填写温度、湿度及可选备注。</li>
-            <li>保存后会进入环境趋势；超出目标区间时可能生成环境异常。</li>
+            <li>保存后会进入环境趋势，供你手动对照目标区间和宠物实际状态。</li>
           </ol>
 
-          <h3>处理环境异常</h3>
-          <p class="path"><span>路径</span>设置 → 环境异常处理</p>
-          <p>可根据最新读数刷新异常，查看进行中和历史异常。正常读数会按规则关闭对应异常；App 只提供记录和提示，不能代替现场检查设备与宠物状态。</p>
         </section>
 
         <section id="history-zh" class="manual-section">
@@ -198,7 +195,7 @@
             <li>点击顶栏日期按钮打开日历；没有内容的日期会禁用。</li>
             <li>点击筛选按钮按记录类型筛选，或使用“回到今天”。</li>
             <li>点击记录查看详情；通过详情页的“编辑”修改内容，或使用菜单标记完成／未完成。</li>
-            <li>删除记录后，它会进入“设置 → 历史追溯与回收站”；关联的库存消耗会尝试回滚。</li>
+            <li>删除记录前会要求确认；删除后不会进入回收站，关联的库存消耗会按现有数据关系尝试回滚。需要保留副本时请先导出完整备份。</li>
           </ol>
         </section>
 
@@ -268,7 +265,7 @@
             <li>选择预设强调色，或使用色板末尾的系统自定义取色器。</li>
             <li>决定应用背景是否跟随强调色，并选择浅色背景预设。</li>
             <li>开启或关闭性别符号颜色。</li>
-            <li>选择首页状态卡背景图片，进入 16:9 裁切页拖动和缩放；图片只保存在本机，除非你主动把照片同步选项打开。</li>
+            <li>选择首页状态卡背景图片，进入 16:9 裁切页拖动和缩放；该背景只保存在本机，不随个人 iCloud 同步上传。</li>
           </ul>
 
           <h3>语言与单位</h3>
@@ -278,16 +275,17 @@
 
         <section id="icloud-zh" class="manual-section">
           <div class="section-number">11</div>
-          <h2>iCloud 同步</h2>
+          <h2>iCloud 同步与共同照料</h2>
           <p class="path"><span>路径</span>设置 → 数据管理 → iCloud 同步</p>
           <ol class="steps">
             <li>打开“iCloud 同步”。首次安装时默认关闭；开启前请确认系统已登录 iCloud，并为栖记开放 iCloud 权限。</li>
-            <li>主同步包含宠物、照料、任务、环境、医疗、检疫、繁育、耗材、审计和回收站数据。</li>
-            <li>照片同步是单独的开关，默认关闭。关闭它不会删除本机照片，也不会上传或下载照片。</li>
+            <li>个人同步包含宠物档案、照料与专业记录、任务、环境、耗材和库存数据。</li>
+            <li>个人同步只包含宠物当前头像的轻量缩略图；记录附件、拍摄原图和首页状态卡背景不会上传。</li>
             <li>点击“立即同步”可手动执行。App 启动、回到前台或本机成功保存后也会按条件同步。</li>
             <li>离线时可继续记录；重新联网后按单条档案合并。同一条内容发生冲突时，以最近修改为准。</li>
+            <li>在“设置 → 数据管理 → 照料空间”可以创建或加入共同照料空间。该空间的档案、费用、库存、头像、记录附件与照片原图会同步给获邀成员；所有者可管理只读或可编辑权限。</li>
           </ol>
-          <div class="tip"><b>不是实时协作</b><span>当前没有后台静默推送。另一台设备的修改通常会在本机下次进入前台或手动同步时获取。</span></div>
+          <div class="tip"><b>同步可能延迟</b><span>App 会接收 CloudKit 变更通知并在前台执行增量同步，但系统可能延迟后台执行。重要修改后可点击“立即同步”，共同照料仍需在签名真机或 TestFlight 中验证邀请与权限。</span></div>
         </section>
 
         <section id="backup-zh" class="manual-section">
@@ -331,14 +329,14 @@
 
         <section id="delete-zh" class="manual-section">
           <div class="section-number">14</div>
-          <h2>删除与历史追溯</h2>
+          <h2>删除与备份恢复</h2>
           <h3>删除宠物</h3>
           <p class="path"><span>路径</span>宠物 → 选择宠物 → 编辑 → 删除此爬宠档案</p>
           <p>宠物档案删除属于高影响操作，相关照料记录与照片会一并处理。操作前建议先导出完整备份。</p>
 
-          <h3>恢复误删记录</h3>
-          <p class="path"><span>路径</span>设置 → 流程与追溯 → 历史追溯与回收站</p>
-          <p>这里可以查看被删除的记录并按支持范围恢复。恢复记录时，相关库存与照片引用会按现有数据关系重新校验。</p>
+          <h3>从备份恢复</h3>
+          <p class="path"><span>路径</span>设置 → 数据管理 → 导入与导出 → 从备份恢复</p>
+          <p>应用不提供回收站。若需要恢复已经删除的内容，请选择删除前导出的 ZIP 备份或旧版 JSON 档案；导入前系统会按现有流程创建安全回退副本。</p>
 
           <h3>删除 App</h3>
           <p>删除 App 会移除其本机应用空间中的数据；已导出的 ZIP、JSON、CSV 或 PDF，以及已同步到 iCloud 私有数据库的内容，不会因删除本机 App 自动全部消失。</p>
@@ -380,12 +378,12 @@
           <h1>Detailed User Guide</h1>
           <p class="manual-lead">This guide follows the actual navigation in the app. Each section starts with a feature path, then explains the steps, saved result, and important limitations.</p>
           <div class="manual-meta">
-            <span>For iOS version 1.0.1 (Build 9) and nearby versions</span>
-            <span>Last updated: September 19, 2026</span>
+            <span>For iOS version 1.0.1 (Build 11) and nearby versions</span>
+            <span>Last updated: September 21, 2026</span>
           </div>
           <div class="notice-card">
             <strong>Two things to know first</strong>
-            <p>You can use Terria without an account. Data stays on the device by default. iCloud Sync is off by default; records enter the private iCloud database of the current Apple Account only after you enable it.</p>
+            <p>You can use Terria without an account. Data stays on the device by default. Personal iCloud Sync and Shared Care spaces are off by default; content enters Apple private or shared CloudKit zones only after you opt in or accept an invitation.</p>
           </div>
         </header>
 
@@ -405,7 +403,7 @@
             <li><a href="#icloud-en">iCloud Sync</a></li>
             <li><a href="#backup-en">Backup, restore, and export</a></li>
             <li><a href="#pro-en">Terria Pro and purchases</a></li>
-            <li><a href="#delete-en">Deletion and recovery</a></li>
+            <li><a href="#delete-en">Deletion and backup recovery</a></li>
             <li><a href="#help-en">Troubleshooting</a></li>
           </ol>
         </nav>
@@ -519,11 +517,8 @@
           <ol class="steps">
             <li>Select enclosure, date, and time.</li>
             <li>Enter temperature, humidity, and optional notes.</li>
-            <li>Save to update trends. Out-of-range values may create an incident.</li>
+            <li>Save to update trends, then compare readings with your target range and the animal’s actual condition.</li>
           </ol>
-          <h3>Environment incidents</h3>
-          <p class="path"><span>Path</span>Settings → Environment Incidents</p>
-          <p>Refresh incidents from readings and inspect open or historical items. A normal reading may close the matching incident. Always inspect the actual enclosure and animal.</p>
         </section>
 
         <section id="history-en" class="manual-section">
@@ -535,7 +530,7 @@
             <li>Use the date button; dates without content are disabled.</li>
             <li>Use Filter or Return to Today.</li>
             <li>Open a record for details and editing, or mark it complete/incomplete from its menu.</li>
-            <li>Deleted records move to Settings → Audit Trail & Trash. Linked inventory is restored when possible.</li>
+            <li>Terria asks for confirmation before deleting a record. Deleted records do not move to a trash folder; linked inventory is restored when possible. Export a complete backup first if you need a recoverable copy.</li>
           </ol>
         </section>
 
@@ -599,7 +594,7 @@
             <li>Choose a preset accent or use the system color picker at the end of the palette.</li>
             <li>Control accent-tinted backgrounds and light background presets.</li>
             <li>Turn colored sex symbols on or off.</li>
-            <li>Choose and crop a 16:9 home status-card image. It remains local unless photo sync is enabled.</li>
+            <li>Choose and crop a 16:9 home status-card image. This background remains local and is not uploaded by personal iCloud Sync.</li>
           </ul>
           <h3>Language and units</h3>
           <p class="path"><span>Path</span>Settings → Language / Unit System</p>
@@ -608,16 +603,17 @@
 
         <section id="icloud-en" class="manual-section">
           <div class="section-number">11</div>
-          <h2>iCloud Sync</h2>
+          <h2>iCloud Sync and Shared Care</h2>
           <p class="path"><span>Path</span>Settings → Data Management → iCloud Sync</p>
           <ol class="steps">
             <li>Enable iCloud Sync. It is off on a new install; sign in to iCloud and allow Terria access first.</li>
-            <li>Main sync covers pets, care, tasks, environment, medical, quarantine, breeding, inventory, audit, and trash data.</li>
-            <li>Photo Sync is separate and off by default. Turning it off neither deletes local photos nor uploads/downloads them.</li>
+            <li>Personal sync covers pet profiles, care and professional records, tasks, environment, supplies, and inventory data.</li>
+            <li>Personal sync includes only a lightweight thumbnail of each pet’s current avatar. Record attachments, captured originals, and home status-card backgrounds are not uploaded.</li>
             <li>Tap Sync Now, or let Terria sync when launched, foregrounded, or after a successful local save.</li>
             <li>Work offline normally. On reconnect, items merge individually; the latest modification wins for the same item.</li>
+            <li>Under Settings → Data Management → Care Spaces, you can create or join a Shared Care space. Profiles, costs, inventory, avatars, record attachments, and original photos in that space sync to invited members; owners manage read-only or editing permission.</li>
           </ol>
-          <div class="tip"><b>Not real-time collaboration</b><span>There is no background silent push. Changes from another device are normally fetched the next time Terria enters the foreground or you tap Sync Now.</span></div>
+          <div class="tip"><b>Sync may be delayed</b><span>Terria receives CloudKit change notifications and performs incremental foreground sync, but iOS may delay background execution. Use Sync Now after important changes, and verify Shared Care invitations and permissions on signed devices or TestFlight.</span></div>
         </section>
 
         <section id="backup-en" class="manual-section">
@@ -658,13 +654,13 @@
 
         <section id="delete-en" class="manual-section">
           <div class="section-number">14</div>
-          <h2>Deletion and recovery</h2>
+          <h2>Deletion and backup recovery</h2>
           <h3>Delete a pet</h3>
           <p class="path"><span>Path</span>Pets → choose a pet → Edit → Delete This Pet Profile</p>
           <p>This is a high-impact action that also handles related care and photos. Export a complete backup first.</p>
-          <h3>Recover a deleted record</h3>
-          <p class="path"><span>Path</span>Settings → Workflow & Audit → Audit Trail & Trash</p>
-          <p>Review deleted records and restore supported items. Terria revalidates inventory and photo relationships during recovery.</p>
+          <h3>Restore from a backup</h3>
+          <p class="path"><span>Path</span>Settings → Data Management → Import & Export → Restore from Backup</p>
+          <p>Terria does not provide a trash folder. To recover deleted content, select a ZIP backup exported before deletion or a legacy JSON archive. Terria creates a safety rollback copy before importing.</p>
           <h3>Delete the app</h3>
           <p>Deleting Terria removes its local app-space data. Exported files and content in the private iCloud database do not necessarily disappear with the local app.</p>
         </section>
