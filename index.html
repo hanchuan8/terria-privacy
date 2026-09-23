@@ -67,7 +67,7 @@
         <h3>相机</h3>
         <p>只有当你主动选择拍照时，应用才会使用相机，用于给宠物档案或照料记录添加照片。应用不会在后台持续使用相机。</p>
         <h3>照片</h3>
-        <p>只有当你主动选择照片时，应用才会访问你选中的内容。选中的照片会按记录需要保存在本机应用空间中，不会上传到栖记服务器。当前个人 iCloud 同步仅同步宠物当前头像的轻量缩略图，不再上传记录附件或照片原图；独立的照片同步开关已移除。若旧版本曾上传附件，升级后的同步会尝试清理这些旧云端文件；在同步完成前，旧副本可能仍留在你的 iCloud 私有空间。</p>
+        <p>只有当你主动选择照片时，应用才会访问你选中的内容。选中的照片会按记录需要保存在本机应用空间中，不会上传到栖记服务器。使用应用内相机拍照后，应用会请求系统照片权限，并尝试在系统“照片”App 的“栖记”或“Terria”相簿中另存一份；拒绝该权限不影响将照片添加到应用内记录。当前个人 iCloud 同步仅同步宠物当前头像的轻量缩略图，不再上传记录附件或照片原图；独立的照片同步开关已移除。若旧版本曾上传附件，升级后的同步会尝试清理这些旧云端文件；在同步完成前，旧副本可能仍留在你的 iCloud 私有空间。</p>
         <h3>通知</h3>
         <p>通知权限用于在设备上安排照料、给药或复诊等本地提醒。当前版本不依赖栖记的远程推送服务器。</p>
         <p>当前版本不会主动请求通讯录、位置、健康数据或麦克风权限。你可以随时在 iOS“设置”中管理已授予的权限。</p>
@@ -85,6 +85,7 @@
         <p>当前版本没有栖记服务器上的用户档案，因此没有需要由开发者替你从服务器删除的账号数据。</p>
         <ul>
           <li>你可以在应用内删除宠物、记录、照片或其他本机内容；</li>
+          <li>删除应用内记录或应用本身，不会删除此前已另存到系统“照片”App 的照片；如需移除这份副本，请在系统“照片”App 中自行删除；</li>
           <li>删除应用会移除其应用空间中的本地数据，但不会自动保证删除此前已同步到 iCloud 私有数据库或已导出到其他位置的副本；</li>
           <li>若你曾通过测试版创建共同照料空间，当前版本暂停共享入口并不会自动撤销旧共享区域或收回其他成员此前保存的副本；</li>
           <li>你之前导出的 ZIP、JSON、CSV 或 PDF 文件可能仍存在于文件 App、云盘或其他分享目标中，需要你自行删除；</li>
@@ -177,7 +178,7 @@
         <h3>Camera</h3>
         <p>The app uses the camera only when you actively choose to take a photo for a pet profile or care record. It does not continuously use the camera in the background.</p>
         <h3>Photos</h3>
-        <p>The app accesses photos only when you actively choose them. Selected photos are stored in the local app space as needed for your records and are not uploaded to a Terria server. Current personal iCloud Sync includes only lightweight thumbnails of current pet avatars; it no longer uploads record attachments or original photos. The separate photo-sync switch has been removed. If an older version uploaded attachments, the app attempts to remove those older cloud files when it next syncs; copies may remain in your private iCloud space until that sync completes.</p>
+        <p>The app accesses existing photos only when you choose them. Selected photos are stored in the app's local space as needed for your records and are not uploaded to a Terria server. After you take a photo with the in-app camera, Terria requests access to your photo library and attempts to save a separate copy in a “栖记” or “Terria” album in Apple's Photos app. Declining that permission does not prevent you from adding the photo to an in-app record. Current personal iCloud Sync includes only lightweight thumbnails of current pet avatars; it no longer uploads record attachments or original photos. The separate photo-sync switch has been removed. If an older version uploaded attachments, the app attempts to remove those older cloud files when it next syncs; copies may remain in your private iCloud space until that sync completes.</p>
         <h3>Notifications</h3>
         <p>Notification permission is used to schedule local care, medication, or appointment reminders on your device. The current version does not rely on a Terria remote push server.</p>
         <p>The current version does not actively request access to contacts, location, health data, or the microphone. You can manage granted permissions at any time in iOS Settings.</p>
@@ -195,6 +196,7 @@
         <p>The current version has no user profiles stored on Terria servers, so there is no server account data for the developer to delete on your behalf.</p>
         <ul>
           <li>You can delete pets, records, photos, and other local content in the app;</li>
+          <li>Deleting an in-app record or uninstalling Terria does not remove a photo already saved in Apple's Photos app; delete that separate copy in Photos if you no longer want it;</li>
           <li>Deleting the app removes data in its local app space, but does not guarantee deletion of copies previously synced to the private iCloud database or exported elsewhere;</li>
           <li>If you created a Shared Care space in a test build, the current release's paused sharing controls do not automatically revoke that older shared zone or retrieve copies previously saved by other members;</li>
           <li>Previously exported ZIP, JSON, CSV, or PDF files may remain in Files, cloud storage, or another sharing destination and must be deleted by you;</li>
