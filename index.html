@@ -29,9 +29,9 @@
     <main>
       <article class="policy policy-zh" lang="zh-CN">
         <h1>栖记 Terria 隐私政策</h1>
-        <p class="updated">最后更新日期：2026 年 9 月 21 日</p>
+        <p class="updated">最后更新日期：2026 年 9 月 23 日</p>
         <p>栖记（Terria）是一款面向爬宠饲养者的本地数据优先 iOS 应用。本政策说明当前版本如何处理你在应用中创建的记录、照片、权限和导出文件。</p>
-        <p>我们不要求注册或登录，也不运营用于集中保存你的宠物资料和照料记录的自建服务器。个人 iCloud 同步与共同照料空间均由你主动开启，默认关闭。</p>
+        <p>我们不要求注册或登录，也不运营用于集中保存你的宠物资料和照料记录的自建服务器。个人 iCloud 同步由你主动开启，默认关闭。</p>
 
         <hr>
 
@@ -57,7 +57,7 @@
 
         <h2>3. 本地存储与使用方式</h2>
         <p>当前版本的宠物档案、照料记录、环境数据、专业记录、耗材、照片和应用设置默认保存在你的设备本地应用空间中。若你在“设置 → 数据管理 → iCloud 同步”中主动开启个人同步，档案、记录与宠物当前头像缩略图会保存到当前 Apple 账户的 iCloud 私有数据库，以便在你的设备间同步；个人同步不会上传记录附件与照片原图。</p>
-        <p>若你创建或加入共同照料空间，该空间的档案、价格与费用、库存、头像、记录附件及照片原图会通过独立的 CloudKit 共享区域同步给获邀成员。空间所有者可以邀请或移除成员，并分配只读或可编辑权限。</p>
+        <p>当前公开版本不提供共同照料空间。</p>
         <p>应用会在本地使用这些信息来维护数据关系、生成趋势和统计、安排本地通知，以及生成 CSV、PDF、JSON 或 ZIP 文件。栖记不会把这些内容上传到栖记运营的服务器。</p>
         <p>当前版本不使用你的记录建立广告画像、出售记录或建立跨应用用户画像。</p>
 
@@ -67,7 +67,7 @@
         <h3>相机</h3>
         <p>只有当你主动选择拍照时，应用才会使用相机，用于给宠物档案或照料记录添加照片。应用不会在后台持续使用相机。</p>
         <h3>照片</h3>
-        <p>只有当你主动选择照片时，应用才会访问你选中的内容。选中的照片会按记录需要保存在本机应用空间中，不会上传到栖记服务器。个人 iCloud 同步仅同步当前宠物头像缩略图，不同步记录附件或照片原图；共同照料空间会同步其头像、记录附件与照片原图给获邀成员。</p>
+        <p>只有当你主动选择照片时，应用才会访问你选中的内容。选中的照片会按记录需要保存在本机应用空间中，不会上传到栖记服务器。当前个人 iCloud 同步仅同步宠物当前头像的轻量缩略图，不再上传记录附件或照片原图；独立的照片同步开关已移除。若旧版本曾上传附件，升级后的同步会尝试清理这些旧云端文件；在同步完成前，旧副本可能仍留在你的 iCloud 私有空间。</p>
         <h3>通知</h3>
         <p>通知权限用于在设备上安排照料、给药或复诊等本地提醒。当前版本不依赖栖记的远程推送服务器。</p>
         <p>当前版本不会主动请求通讯录、位置、健康数据或麦克风权限。你可以随时在 iOS“设置”中管理已授予的权限。</p>
@@ -78,7 +78,6 @@
         <p>当你主动创建完整备份时，应用会在设备上生成 ZIP 文件。备份可能包含宠物档案、照料和专业记录、照片以及用于恢复数据的清单。</p>
         <p>CSV 明细、PDF 报告、JSON 或 ZIP 备份会先在本机生成。只有当你点击系统分享按钮并选择邮件、云盘、隔空投送、文件 App 或其他目标时，文件才会按照你的选择离开应用。</p>
         <p>一旦文件被发送到外部服务，栖记无法控制该服务如何保存或处理文件。分享前请确认文件内容和接收方，并妥善保管导出的备份。</p>
-        <p>共同照料空间仅在你主动创建或接受邀请后启用。加入空间会让获邀成员按权限访问该空间的数据；成员可能已在自己的设备、系统相册或导出文件中保留获授权时取得的副本。</p>
 
         <hr>
 
@@ -86,8 +85,8 @@
         <p>当前版本没有栖记服务器上的用户档案，因此没有需要由开发者替你从服务器删除的账号数据。</p>
         <ul>
           <li>你可以在应用内删除宠物、记录、照片或其他本机内容；</li>
-          <li>删除应用会移除其应用空间中的本地数据，但不会自动保证删除此前已同步到 iCloud 私有数据库、共同照料共享区域或已导出到其他位置的副本；</li>
-          <li>退出共同照料空间或被移除后，设备会停止访问该共享区域；已保存到系统相册或导出位置的副本需要由持有者自行删除；</li>
+          <li>删除应用会移除其应用空间中的本地数据，但不会自动保证删除此前已同步到 iCloud 私有数据库或已导出到其他位置的副本；</li>
+          <li>若你曾通过测试版创建共同照料空间，当前版本暂停共享入口并不会自动撤销旧共享区域或收回其他成员此前保存的副本；</li>
           <li>你之前导出的 ZIP、JSON、CSV 或 PDF 文件可能仍存在于文件 App、云盘或其他分享目标中，需要你自行删除；</li>
           <li>恢复备份前，应用会按现有流程创建安全回退副本，回退副本也属于本机数据。</li>
         </ul>
@@ -99,11 +98,11 @@
         <p>截至本政策生效日期，当前版本：</p>
         <ul>
           <li>没有接入广告 SDK、行为分析 SDK 或崩溃上报 SDK；</li>
-          <li>没有栖记账号服务或栖记自建用户数据服务器；可选个人同步和共同照料分别使用 Apple 提供的 CloudKit 私有数据库与共享区域；</li>
+          <li>没有栖记账号服务或栖记自建用户数据服务器；可选的个人同步使用 Apple 提供的 CloudKit 私有数据库；</li>
           <li>不使用广告标识符，不请求跨 App 跟踪权限；</li>
           <li>不把宠物档案、照料记录或照片发送给第三方用于分析或广告。</li>
         </ul>
-        <p>应用使用 Apple 提供的系统能力，例如 iCloud、照片选择器、相机、通知和系统分享面板。个人同步与共同照料均由你主动开启；你邀请的共同照料成员或主动选择的分享目标会影响谁能够访问相应内容。</p>
+        <p>应用使用 Apple 提供的系统能力，例如 iCloud、照片选择器、相机、通知和系统分享面板。个人同步由你主动开启；你选择的文件分享目标会影响谁能够访问导出内容。</p>
 
         <hr>
 
@@ -119,7 +118,7 @@
           <li>查看、修改或删除本机宠物和照料记录；</li>
           <li>开启或关闭相机、照片和通知权限；</li>
           <li>创建、导出、恢复或自行删除备份文件；</li>
-          <li>开启或关闭个人 iCloud 同步，创建、加入或退出共同照料空间，并由空间所有者管理成员权限；</li>
+          <li>开启或关闭个人 iCloud 同步；</li>
           <li>通过系统分享面板决定是否以及向谁发送导出文件；</li>
           <li>删除应用及其本机数据。</li>
         </ul>
@@ -140,9 +139,9 @@
 
       <article class="policy policy-en" lang="en">
         <h1>Terria Privacy Policy</h1>
-        <p class="updated">Last updated: September 21, 2026</p>
+        <p class="updated">Last updated: September 23, 2026</p>
         <p>Terria is a local-first iOS app for reptile keepers. This policy explains how the current version handles records, photos, permissions, and exported files created while you use the app.</p>
-        <p>Terria does not require an account or sign-in and does not operate its own server for centrally storing pet profiles or care records. Personal iCloud Sync and Shared Care spaces are opt-in and off by default.</p>
+        <p>Terria does not require an account or sign-in and does not operate its own server for centrally storing pet profiles or care records. Personal iCloud Sync is opt-in and off by default.</p>
 
         <hr>
 
@@ -168,7 +167,7 @@
 
         <h2>3. Local Storage and Use</h2>
         <p>In the current version, pet profiles, care records, environment data, professional records, supplies, photos, and app settings are stored in the app’s local storage by default. If you enable personal sync under Settings → Data Management → iCloud Sync, profiles, records, and current pet-avatar thumbnails are also stored in the private iCloud database of the current Apple Account for synchronization across your devices. Personal sync does not upload record attachments or original photos.</p>
-        <p>If you create or join a Shared Care space, its profiles, prices and costs, inventory, avatars, record attachments, and original photos are synced to invited members through a separate shared CloudKit zone. The owner can invite or remove members and grant read-only or editing permission.</p>
+        <p>Shared Care spaces are not available in the current public release.</p>
         <p>The app uses this information locally to maintain relationships between records, calculate trends and summaries, schedule local notifications, and generate CSV, PDF, JSON, or ZIP files. Terria does not upload this content to a server operated by Terria.</p>
         <p>The current version does not use your records to build advertising profiles, sell your records, or create a cross-app user profile.</p>
 
@@ -178,7 +177,7 @@
         <h3>Camera</h3>
         <p>The app uses the camera only when you actively choose to take a photo for a pet profile or care record. It does not continuously use the camera in the background.</p>
         <h3>Photos</h3>
-        <p>The app accesses photos only when you actively choose them. Selected photos are stored in the local app space as needed for your records and are not uploaded to a Terria server. Personal iCloud Sync includes only current pet-avatar thumbnails, not record attachments or original photos. A Shared Care space syncs its avatars, record attachments, and original photos to invited members.</p>
+        <p>The app accesses photos only when you actively choose them. Selected photos are stored in the local app space as needed for your records and are not uploaded to a Terria server. Current personal iCloud Sync includes only lightweight thumbnails of current pet avatars; it no longer uploads record attachments or original photos. The separate photo-sync switch has been removed. If an older version uploaded attachments, the app attempts to remove those older cloud files when it next syncs; copies may remain in your private iCloud space until that sync completes.</p>
         <h3>Notifications</h3>
         <p>Notification permission is used to schedule local care, medication, or appointment reminders on your device. The current version does not rely on a Terria remote push server.</p>
         <p>The current version does not actively request access to contacts, location, health data, or the microphone. You can manage granted permissions at any time in iOS Settings.</p>
@@ -189,7 +188,6 @@
         <p>When you actively create a complete backup, the app generates a ZIP file on your device. It may contain pet profiles, care and professional records, photos, and the manifest needed to restore the data.</p>
         <p>CSV details, PDF reports, JSON files, and ZIP backups are generated locally first. A file leaves the app only when you use the system share interface and choose a destination such as Mail, cloud storage, AirDrop, Files, or another app.</p>
         <p>After a file is sent to an external service, Terria cannot control how that service stores or handles it. Please review the file and recipient before sharing and keep exported backups secure.</p>
-        <p>A Shared Care space is enabled only after you create it or accept an invitation. Invited members can access the space according to their permission, and may retain authorized copies in their device storage, Photos library, or exported files.</p>
 
         <hr>
 
@@ -197,8 +195,8 @@
         <p>The current version has no user profiles stored on Terria servers, so there is no server account data for the developer to delete on your behalf.</p>
         <ul>
           <li>You can delete pets, records, photos, and other local content in the app;</li>
-          <li>Deleting the app removes data in its local app space, but does not guarantee deletion of copies previously synced to the private iCloud database, a Shared Care zone, or exported elsewhere;</li>
-          <li>After leaving or being removed from a Shared Care space, the device stops accessing that shared zone; copies saved to Photos or export destinations must be deleted by their holder;</li>
+          <li>Deleting the app removes data in its local app space, but does not guarantee deletion of copies previously synced to the private iCloud database or exported elsewhere;</li>
+          <li>If you created a Shared Care space in a test build, the current release's paused sharing controls do not automatically revoke that older shared zone or retrieve copies previously saved by other members;</li>
           <li>Previously exported ZIP, JSON, CSV, or PDF files may remain in Files, cloud storage, or another sharing destination and must be deleted by you;</li>
           <li>Before a restore, the app creates a safety rollback copy under its existing workflow; that copy is also local device data.</li>
         </ul>
@@ -210,11 +208,11 @@
         <p>As of the effective date of this policy, the current version:</p>
         <ul>
           <li>does not include advertising, behavioral analytics, or crash-reporting SDKs;</li>
-          <li>does not include a Terria account service or Terria-operated user-data server; optional personal sync and Shared Care use Apple’s private and shared CloudKit zones respectively;</li>
+          <li>does not include a Terria account service or Terria-operated user-data server; optional personal sync uses Apple’s private CloudKit database;</li>
           <li>does not use an advertising identifier or request cross-app tracking permission;</li>
           <li>does not send pet profiles, care records, or photos to a third party for analytics or advertising.</li>
         </ul>
-        <p>The app uses Apple system capabilities such as iCloud, the photo picker, camera, notifications, and the system sharing interface. Personal sync and Shared Care are opt-in. The members you invite or sharing destinations you choose affect who can access the corresponding content.</p>
+        <p>The app uses Apple system capabilities such as iCloud, the photo picker, camera, notifications, and the system sharing interface. Personal sync is opt-in. The file-sharing destinations you choose affect who can access exported content.</p>
 
         <hr>
 
@@ -230,7 +228,7 @@
           <li>view, edit, or delete local pet and care records;</li>
           <li>turn camera, photo, and notification permissions on or off;</li>
           <li>create, export, restore, or delete backup files yourself;</li>
-          <li>enable or disable personal iCloud Sync, create, join, or leave Shared Care spaces, and manage member permissions as a space owner;</li>
+          <li>enable or disable personal iCloud Sync;</li>
           <li>decide whether and to whom an exported file is sent through the system share sheet;</li>
           <li>delete the app and its local data.</li>
         </ul>

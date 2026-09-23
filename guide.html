@@ -33,12 +33,12 @@
           <h1>详细使用说明</h1>
           <p class="manual-lead">这份说明按 App 中的真实入口编写。每一节都先给出功能路径，再说明具体操作、保存结果和需要注意的边界。</p>
           <div class="manual-meta">
-            <span>适用于 iOS 版 1.0.1（Build 11）及相近版本</span>
-            <span>最后更新：2026 年 9 月 21 日</span>
+            <span>适用于当前公开 iOS 版本</span>
+            <span>最后更新：2026 年 9 月 23 日</span>
           </div>
           <div class="notice-card">
             <strong>先记住两件事</strong>
-            <p>栖记无需注册即可使用，数据默认保存在本机。个人 iCloud 同步和共同照料空间均默认关闭，只有你主动开启或接受邀请后，相应内容才会进入 Apple 提供的私有或共享 CloudKit 区域。</p>
+            <p>栖记无需注册即可使用，数据默认保存在本机。个人 iCloud 同步默认关闭；只有你主动开启后，相关档案和宠物当前头像缩略图才会进入当前 Apple 账户的 CloudKit 私有数据库。</p>
           </div>
         </header>
 
@@ -275,17 +275,16 @@
 
         <section id="icloud-zh" class="manual-section">
           <div class="section-number">11</div>
-          <h2>iCloud 同步与共同照料</h2>
+          <h2>iCloud 同步</h2>
           <p class="path"><span>路径</span>设置 → 数据管理 → iCloud 同步</p>
           <ol class="steps">
             <li>打开“iCloud 同步”。首次安装时默认关闭；开启前请确认系统已登录 iCloud，并为栖记开放 iCloud 权限。</li>
             <li>个人同步包含宠物档案、照料与专业记录、任务、环境、耗材和库存数据。</li>
-            <li>个人同步只包含宠物当前头像的轻量缩略图；记录附件、拍摄原图和首页状态卡背景不会上传。</li>
+            <li>个人同步只包含宠物当前头像的轻量缩略图；记录附件、拍摄原图和首页状态卡背景不再上传。独立的照片同步开关已移除；旧版曾上传的附件会在升级后同步时尝试从 iCloud 私有空间清理。</li>
             <li>点击“立即同步”可手动执行。App 启动、回到前台或本机成功保存后也会按条件同步。</li>
             <li>离线时可继续记录；重新联网后按单条档案合并。同一条内容发生冲突时，以最近修改为准。</li>
-            <li>在“设置 → 数据管理 → 照料空间”可以创建或加入共同照料空间。该空间的档案、费用、库存、头像、记录附件与照片原图会同步给获邀成员；所有者可管理只读或可编辑权限。</li>
           </ol>
-          <div class="tip"><b>同步可能延迟</b><span>App 会接收 CloudKit 变更通知并在前台执行增量同步，但系统可能延迟后台执行。重要修改后可点击“立即同步”，共同照料仍需在签名真机或 TestFlight 中验证邀请与权限。</span></div>
+          <div class="tip"><b>同步可能延迟</b><span>App 会接收 CloudKit 变更通知并在前台执行增量同步，但系统可能延迟后台执行。重要修改后可点击“立即同步”。当前公开版本不提供共同照料空间。</span></div>
         </section>
 
         <section id="backup-zh" class="manual-section">
@@ -378,12 +377,12 @@
           <h1>Detailed User Guide</h1>
           <p class="manual-lead">This guide follows the actual navigation in the app. Each section starts with a feature path, then explains the steps, saved result, and important limitations.</p>
           <div class="manual-meta">
-            <span>For iOS version 1.0.1 (Build 11) and nearby versions</span>
-            <span>Last updated: September 21, 2026</span>
+            <span>For the current public iOS release</span>
+            <span>Last updated: September 23, 2026</span>
           </div>
           <div class="notice-card">
             <strong>Two things to know first</strong>
-            <p>You can use Terria without an account. Data stays on the device by default. Personal iCloud Sync and Shared Care spaces are off by default; content enters Apple private or shared CloudKit zones only after you opt in or accept an invitation.</p>
+            <p>You can use Terria without an account. Data stays on the device by default. Personal iCloud Sync is off by default; profiles and current pet-avatar thumbnails enter the current Apple Account’s private CloudKit database only if you enable it.</p>
           </div>
         </header>
 
@@ -603,17 +602,16 @@
 
         <section id="icloud-en" class="manual-section">
           <div class="section-number">11</div>
-          <h2>iCloud Sync and Shared Care</h2>
+          <h2>iCloud Sync</h2>
           <p class="path"><span>Path</span>Settings → Data Management → iCloud Sync</p>
           <ol class="steps">
             <li>Enable iCloud Sync. It is off on a new install; sign in to iCloud and allow Terria access first.</li>
             <li>Personal sync covers pet profiles, care and professional records, tasks, environment, supplies, and inventory data.</li>
-            <li>Personal sync includes only a lightweight thumbnail of each pet’s current avatar. Record attachments, captured originals, and home status-card backgrounds are not uploaded.</li>
+            <li>Personal sync includes only a lightweight thumbnail of each pet’s current avatar. Record attachments, captured originals, and home status-card backgrounds are no longer uploaded. The separate photo-sync switch has been removed; attachments uploaded by older versions are cleaned from the private iCloud space when the upgraded app syncs.</li>
             <li>Tap Sync Now, or let Terria sync when launched, foregrounded, or after a successful local save.</li>
             <li>Work offline normally. On reconnect, items merge individually; the latest modification wins for the same item.</li>
-            <li>Under Settings → Data Management → Care Spaces, you can create or join a Shared Care space. Profiles, costs, inventory, avatars, record attachments, and original photos in that space sync to invited members; owners manage read-only or editing permission.</li>
           </ol>
-          <div class="tip"><b>Sync may be delayed</b><span>Terria receives CloudKit change notifications and performs incremental foreground sync, but iOS may delay background execution. Use Sync Now after important changes, and verify Shared Care invitations and permissions on signed devices or TestFlight.</span></div>
+          <div class="tip"><b>Sync may be delayed</b><span>Terria receives CloudKit change notifications and performs incremental foreground sync, but iOS may delay background execution. Use Sync Now after important changes. Shared Care spaces are not available in the current public release.</span></div>
         </section>
 
         <section id="backup-en" class="manual-section">
