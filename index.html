@@ -29,7 +29,7 @@
     <main>
       <article class="policy policy-zh" lang="zh-CN">
         <h1>栖记 Terria 隐私政策</h1>
-        <p class="updated">最后更新日期：2026 年 9 月 24 日</p>
+        <p class="updated">最后更新日期：2026 年 9 月 29 日</p>
         <p>栖记（Terria）是一款面向爬宠饲养者的本地数据优先 iOS 应用。本政策说明当前版本如何处理你在应用中创建的记录、照片、权限和导出文件。</p>
         <p>我们不要求注册或登录，也不运营用于集中保存你的宠物资料和照料记录的自建服务器。个人 iCloud 同步由你主动开启，默认关闭。</p>
 
@@ -65,9 +65,11 @@
 
         <h2>4. 照片、相机与系统权限</h2>
         <h3>相机</h3>
-        <p>只有当你主动选择拍照时，应用才会使用相机，用于给宠物档案或照料记录添加照片。应用不会在后台持续使用相机。</p>
+        <p>只有当你主动选择拍照或打开应用内的扫一扫时，应用才会使用相机，用于给宠物档案或照料记录添加照片，或识别宠物二维码。应用不会在后台持续使用相机。</p>
         <h3>照片</h3>
         <p>只有当你主动选择照片时，应用才会访问你选中的内容。选中的照片会按记录需要保存在本机应用空间中，不会上传到栖记服务器。使用应用内相机拍照后，应用会请求系统照片权限，并尝试在系统“照片”App 的“栖记”或“Terria”相簿中另存一份；拒绝该权限不影响将照片添加到应用内记录。当前个人 iCloud 同步仅同步宠物当前头像的轻量缩略图，不再上传记录附件或照片原图；独立的照片同步开关已移除。若旧版本曾上传附件，升级后的同步会尝试清理这些旧云端文件；在同步完成前，旧副本可能仍留在你的 iCloud 私有空间。</p>
+        <h3>宠物二维码</h3>
+        <p>相机扫码和你选取的二维码图片均在设备上识别，不会上传用于识别。二维码仅包含格式标识和宠物档案的唯一标识，不包含档案内容，也不授予其他设备访问权限；应用仅查找本机已有的对应档案。你主动导出的二维码标签图片或 PDF 可包含所选的宠物名称、物种和饲养箱名称，并通过系统分享菜单按你的选择保存或发送。</p>
         <h3>通知</h3>
         <p>通知权限用于在设备上安排照料、给药或复诊等本地提醒。当前版本不依赖栖记的远程推送服务器。</p>
         <p>当前版本不会主动请求通讯录、位置、健康数据或麦克风权限。你可以随时在 iOS“设置”中管理已授予的权限。</p>
@@ -105,7 +107,9 @@
           <li>不把宠物档案、照料记录或照片发送给第三方用于分析或广告。</li>
         </ul>
         <p>应用使用 Apple 提供的系统能力，例如 iCloud、照片选择器、相机、通知和系统分享面板。个人同步由你主动开启；你选择的文件分享目标会影响谁能够访问导出内容。</p>
-        <p>在提供自动检查更新的版本中，这项功能默认开启，你可以在设置中关闭。开启时，应用进入前台后至多每 24 小时向 Apple 的公开应用信息接口查询一次栖记的 App Store 版本。请求只指定应用的公开 App Store ID，不包含宠物档案、照料记录、照片或诊断信息；Apple 可能按其自身政策处理提供网络服务所需的技术信息，例如 IP 地址。检查失败时应用会继续正常运行，也不会将查询结果发送给栖记服务器。</p>
+        <p>在提供自动检查更新的版本中，这项功能默认开启，你可以在设置中关闭。开启时，应用进入前台会在距上次成功检查至少 6 小时后，向 Apple 的公开应用信息接口查询栖记的 App Store 版本。一次检查失败时最多再重试两次；失败不会更新成功检查时间，因此后续进入前台可能再次发起检查。请求只指定应用的公开 App Store ID，不包含宠物档案、照料记录、照片或诊断信息；Apple 可能按其自身政策处理提供网络服务所需的技术信息，例如 IP 地址。检查失败时应用会继续正常运行，也不会将查询结果发送给栖记服务器。</p>
+
+        <p>使用周报海报功能时，你可以主动下载所需字体。应用从 jsDelivr 下载字体，失败时可尝试 GitHub 的原始文件服务；请求不包含宠物档案、照料记录或照片。这些服务提供方可能按其自身政策处理传输所需的技术信息，例如 IP 地址。下载的字体缓存在应用本机空间，仅供应用使用，不安装为系统字体；你可以在周报海报页面删除已下载字体。</p>
 
         <hr>
 
@@ -143,7 +147,7 @@
 
       <article class="policy policy-en" lang="en">
         <h1>Terria Privacy Policy</h1>
-        <p class="updated">Last updated: September 24, 2026</p>
+        <p class="updated">Last updated: September 29, 2026</p>
         <p>Terria is a local-first iOS app for reptile keepers. This policy explains how the current version handles records, photos, permissions, and exported files created while you use the app.</p>
         <p>Terria does not require an account or sign-in and does not operate its own server for centrally storing pet profiles or care records. Personal iCloud Sync is opt-in and off by default.</p>
 
@@ -179,9 +183,11 @@
 
         <h2>4. Photos, Camera, and System Permissions</h2>
         <h3>Camera</h3>
-        <p>The app uses the camera only when you actively choose to take a photo for a pet profile or care record. It does not continuously use the camera in the background.</p>
+        <p>The app uses the camera only when you choose to take a photo for a pet profile or care record, or open the in-app scanner to read a pet QR code. It does not continuously use the camera in the background.</p>
         <h3>Photos</h3>
         <p>The app accesses existing photos only when you choose them. Selected photos are stored in the app's local space as needed for your records and are not uploaded to a Terria server. After you take a photo with the in-app camera, Terria requests access to your photo library and attempts to save a separate copy in a “栖记” or “Terria” album in Apple's Photos app. Declining that permission does not prevent you from adding the photo to an in-app record. Current personal iCloud Sync includes only lightweight thumbnails of current pet avatars; it no longer uploads record attachments or original photos. The separate photo-sync switch has been removed. If an older version uploaded attachments, the app attempts to remove those older cloud files when it next syncs; copies may remain in your private iCloud space until that sync completes.</p>
+        <h3>Pet QR Codes</h3>
+        <p>Camera scans and QR images you select are decoded on your device, without uploading them for recognition. A QR code contains only a format identifier and a unique pet-profile identifier, not profile contents or permission to access data on another device. The app looks up the corresponding profile only among those already on the current device. QR label images or PDFs you export may include the pet name, species, and enclosure name you choose to display. They are saved or sent through the system share sheet at your direction.</p>
         <h3>Notifications</h3>
         <p>Notification permission is used to schedule local care, medication, or appointment reminders on your device. The current version does not rely on a Terria remote push server.</p>
         <p>The current version does not actively request access to contacts, location, health data, or the microphone. You can manage granted permissions at any time in iOS Settings.</p>
@@ -219,7 +225,9 @@
           <li>does not send pet profiles, care records, or photos to a third party for analytics or advertising.</li>
         </ul>
         <p>The app uses Apple system capabilities such as iCloud, the photo picker, camera, notifications, and the system sharing interface. Personal sync is opt-in. The file-sharing destinations you choose affect who can access exported content.</p>
-        <p>In versions that offer automatic update checks, this feature is on by default and can be turned off in Settings. While it is on, the app queries Apple’s public app-information service for Terria’s App Store version at most once every 24 hours after the app enters the foreground. The request specifies only the app’s public App Store ID; it does not include pet profiles, care records, photos, or diagnostic information. Apple may process technical information needed to provide the network service, such as an IP address, under its own policy. A failed check does not interrupt the app, and the lookup result is not sent to a Terria server.</p>
+        <p>In versions that offer automatic update checks, this feature is on by default and can be turned off in Settings. While it is on, entering the foreground triggers a query to Apple’s public app-information service for Terria’s App Store version when at least six hours have passed since the last successful check. A failed check can be retried up to twice. Failure does not update the time of the last successful check, so a later foreground session may trigger another check. The request specifies only the app’s public App Store ID; it does not include pet profiles, care records, photos, or diagnostic information. Apple may process technical information needed to provide the network service, such as an IP address, under its own policy. A failed check does not interrupt the app, and the lookup result is not sent to a Terria server.</p>
+
+        <p>When using weekly posters, you can choose to download the required font. The app downloads it from jsDelivr and may try GitHub’s raw-file service if that fails. These requests do not include pet profiles, care records, or photos. The providers may process technical information needed for the transfer, such as an IP address, under their own policies. Downloaded fonts are cached in the app’s local storage for use within the app, not installed as system fonts. You can delete a downloaded font from the weekly poster screen.</p>
 
         <hr>
 
