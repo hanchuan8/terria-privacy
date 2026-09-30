@@ -29,7 +29,7 @@
     <main>
       <article class="policy policy-zh" lang="zh-CN">
         <h1>栖记 Terria 隐私政策</h1>
-        <p class="updated">最后更新日期：2026 年 9 月 29 日</p>
+        <p class="updated">最后更新日期：2026 年 10 月 1 日</p>
         <p>栖记（Terria）是一款面向爬宠饲养者的本地数据优先 iOS 应用。本政策说明当前版本如何处理你在应用中创建的记录、照片、权限和导出文件。</p>
         <p>我们不要求注册或登录，也不运营用于集中保存你的宠物资料和照料记录的自建服务器。个人 iCloud 同步由你主动开启，默认关闭。</p>
 
@@ -78,7 +78,7 @@
 
         <h2>5. 备份、导出与分享</h2>
         <p>当你主动创建完整备份时，应用会在设备上生成 ZIP 文件。备份可能包含宠物档案、照料和专业记录、照片以及用于恢复数据的清单。</p>
-        <p>在提供“设置 → 数据管理 → 导出诊断信息”功能的版本中，应用仅在本机保存记录详情及编辑页的预定义操作事件、发生时间和记录类型，最多保留最近 200 条。诊断记录不含宠物名称、记录内容、照片或记录 ID，也不是系统控制台日志或崩溃堆栈。你主动导出的 JSON 还会包含导出时间、App 版本与构建号、iOS 版本及设备类别。栖记不会自动上传诊断信息；只有你主动保存或分享该文件时，它才会进入你选择的系统文件位置或分享目标。</p>
+        <p>在提供“设置 → 数据管理 → 导出诊断信息”功能的版本中，应用会在本机记录预定义的记录详情、编辑、照片导入及应用前后台事件，普通日志最多保留最近 500 条。为帮助排查编辑页意外关闭，还会独立保留最多 5 段疑似异常退出事件片段；这些片段只是排查线索，不代表已确认发生崩溃。事件可包含时间、记录类型、页面来源、随机页面／编辑会话／进程标识、App 与 iOS 版本，以及照片导入的数量、字节数、格式、像素尺寸、耗时和限定的错误代码等技术信息。诊断信息不包含宠物名称、记录正文、照片内容、文件名、路径或业务记录 ID，也不是系统控制台日志或崩溃堆栈。你主动导出的 JSON 还会包含导出时间、设备类别、物理内存大小和错误代码汇总。栖记不会自动上传诊断信息；只有你主动保存或分享该文件时，它才会进入你选择的系统文件位置或分享目标。</p>
         <p>CSV 明细、PDF 报告、JSON 或 ZIP 备份会先在本机生成。只有当你通过系统文件选择器保存文件，或通过系统分享面板选择邮件、云盘、隔空投送、文件 App 等目标时，文件才会按照你的选择离开应用。</p>
         <p>一旦文件被发送到外部服务，栖记无法控制该服务如何保存或处理文件。分享前请确认文件内容和接收方，并妥善保管导出的备份。</p>
 
@@ -147,7 +147,7 @@
 
       <article class="policy policy-en" lang="en">
         <h1>Terria Privacy Policy</h1>
-        <p class="updated">Last updated: September 29, 2026</p>
+        <p class="updated">Last updated: October 1, 2026</p>
         <p>Terria is a local-first iOS app for reptile keepers. This policy explains how the current version handles records, photos, permissions, and exported files created while you use the app.</p>
         <p>Terria does not require an account or sign-in and does not operate its own server for centrally storing pet profiles or care records. Personal iCloud Sync is opt-in and off by default.</p>
 
@@ -196,7 +196,7 @@
 
         <h2>5. Backups, Exports, and Sharing</h2>
         <p>When you actively create a complete backup, the app generates a ZIP file on your device. It may contain pet profiles, care and professional records, photos, and the manifest needed to restore the data.</p>
-        <p>In versions that offer Settings → Data Management → Export Diagnostics, the app keeps only predefined events from record details and editing screens, their timestamps, and the type of record involved. It retains at most the 200 most recent events on your device. These entries do not contain pet names, record contents, photos, or record IDs; they are not system console logs or crash stacks. A JSON file you choose to export also includes the export time, app version and build number, iOS version, and device category. Terria does not upload diagnostics automatically. The file goes to a system file location or sharing destination only when you choose to save or share it.</p>
+        <p>In versions that offer Settings → Data Management → Export Diagnostics, the app records predefined events from record details, editing, photo imports, and app foreground or background transitions on your device. The regular log retains up to 500 recent events. Up to five separate event excerpts may also be kept to help investigate a suspected unexpected exit from an edit page; these are diagnostic clues, not confirmation of a crash. Events may include timestamps, record type, page origin, random page, edit-session and process identifiers, app and iOS versions, and technical photo-import details such as count, byte size, format, pixel dimensions, duration, and limited error codes. Diagnostics do not contain pet names, record text, photo contents, file names, paths, or business record IDs; they are not system console logs or crash stacks. A JSON file you choose to export also includes the export time, device category, physical memory size, and an error-code summary. Terria does not upload diagnostics automatically. The file goes to a system file location or sharing destination only when you choose to save or share it.</p>
         <p>CSV details, PDF reports, JSON files, and ZIP backups are generated locally first. A file leaves the app only when you save it through the system file picker or choose a destination such as Mail, cloud storage, AirDrop, or Files through the system share sheet.</p>
         <p>After a file is sent to an external service, Terria cannot control how that service stores or handles it. Please review the file and recipient before sharing and keep exported backups secure.</p>
 
