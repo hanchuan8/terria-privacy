@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#f7f7f5">
-  <meta name="description" content="栖记 Terria 隐私政策：说明 iOS 应用如何处理本地宠物档案、照料记录、照片、通知、备份、诊断信息与分享。">
+  <meta name="description" content="栖记 Terria 隐私政策：说明 iOS 应用如何处理本地宠物档案、照料记录、照片、通知、备份、诊断信息、内购与 RevenueCat 订阅管理。">
   <link rel="canonical" href="https://hanchuan8.github.io/terria-privacy/">
   <title>栖记 Terria 隐私政策</title>
   <link rel="stylesheet" href="./styles.css">
@@ -29,15 +29,15 @@
     <main>
       <article class="policy policy-zh" lang="zh-CN">
         <h1>栖记 Terria 隐私政策</h1>
-        <p class="updated">最后更新日期：2026 年 10 月 1 日</p>
-        <p>栖记（Terria）是一款面向爬宠饲养者的本地数据优先 iOS 应用。本政策说明当前版本如何处理你在应用中创建的记录、照片、权限和导出文件。</p>
+        <p class="updated">最后更新日期：2026 年 10 月 14 日</p>
+        <p>栖记（Terria）是一款面向爬宠饲养者的本地数据优先 iOS 应用。本政策说明应用如何处理你创建的记录、照片、权限、导出文件及内购数据。下述 RevenueCat 处理仅适用于已接入该服务的版本（包括测试版本）；未接入的旧版本不会通过 RevenueCat 处理购买。</p>
         <p>我们不要求注册或登录，也不运营用于集中保存你的宠物资料和照料记录的自建服务器。个人 iCloud 同步由你主动开启，默认关闭。</p>
 
         <hr>
 
         <h2>1. 适用范围</h2>
         <p>本政策适用于栖记 iOS 应用及其当前公开版本提供的相关功能，包括宠物档案、照料记录、环境读数、医疗与检疫记录、繁育资料、耗材、提醒、报告和备份。</p>
-        <p>本政策不适用于 Apple、GitHub、邮件、云盘或其他由你主动选择的外部服务。你将文件发送给这些服务后，应同时查看相应服务自己的隐私政策和服务条款。</p>
+        <p>Apple、RevenueCat、GitHub、邮件、云盘等外部服务也按各自政策处理其接收的数据。你将文件发送给这些服务后，应同时查看相应服务自己的隐私政策和服务条款。</p>
 
         <hr>
 
@@ -85,7 +85,7 @@
         <hr>
 
         <h2>6. 保存、删除与保留</h2>
-        <p>当前版本没有栖记服务器上的用户档案，因此没有需要由开发者替你从服务器删除的账号数据。</p>
+        <p>宠物档案和照料记录不保存在栖记自建服务器上。接入 RevenueCat 的版本会在第三方服务中保留购买记录，具体边界如下。</p>
         <ul>
           <li>你可以在应用内删除宠物、记录、照片或其他本机内容；</li>
           <li>删除应用内记录或应用本身，不会删除此前已另存到系统“照片”App 的照片；如需移除这份副本，请在系统“照片”App 中自行删除；</li>
@@ -95,10 +95,17 @@
           <li>恢复备份前，应用会按现有流程创建安全回退副本，回退副本也属于本机数据。</li>
         </ul>
         <p>本机数据的最终保留时间取决于你的编辑、删除、备份和设备管理操作。</p>
+        <p>卸载应用不会自动删除 Apple 或 RevenueCat 已保存的购买记录。购买数据的保留还取决于验证权益、恢复购买、防欺诈和处理争议等服务用途，以及服务方的适用义务和保留政策。你可通过下方私人邮件渠道提出购买数据的访问、更正或删除请求；我们会核对必要的购买信息并协助处理，不承诺所有交易记录都能立即删除。取消自动续费或申请退款应通过 Apple 办理，删除后台记录不能替代这两项操作。</p>
 
         <hr>
 
         <h2>7. 第三方服务、广告与跟踪</h2>
+        <h3>内购与 RevenueCat</h3>
+        <p>在接入 RevenueCat 的版本中，应用使用 RevenueCat, Inc. 提供的内购管理服务，收录和验证购买、同步及恢复购买状态，并统计订阅和收入。付款与自动续费由 Apple 处理；栖记和 RevenueCat 不会通过本应用读取你的支付卡号、Apple 账户密码或完整付款信息。</p>
+        <p>该服务会处理购买凭据或签名交易、商品及交易标识、购买与到期时间、续费或退款状态，以及商店提供的价格、币种和地区信息。SDK 还会生成并保存随机的匿名应用用户标识，用于归并同一购买的记录；本应用不向其提交你的姓名、邮箱、电话或栖记登录账户。提供服务所需的应用／系统／SDK 版本等技术信息和网络请求信息也可能由服务方处理。</p>
+        <p>这些购买数据会发送到 RevenueCat 的服务器，开发者可在其后台查看购买历史、订阅状态和汇总统计。栖记不向 RevenueCat 发送宠物档案、照料或专业记录、照片、备份及本机诊断文件，也不将购买数据用于广告投放、数据中间商共享或跨 App 广告跟踪。匿名购买标识并不表示第三方完全不保存任何数据。</p>
+        <p>应用可能通过 RevenueCat 提供的备用 API 地址连接该服务，以改善部分地区的连通性；接收方和用途不变。详细信息见 <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat 隐私政策</a>。</p>
+
         <p>截至本政策生效日期，当前版本：</p>
         <ul>
           <li>没有接入广告 SDK、行为分析 SDK 或崩溃上报 SDK；</li>
@@ -142,20 +149,21 @@
 
         <h2>11. 联系开发者</h2>
         <p>如果你对本政策或栖记的隐私处理有疑问，可以通过 <a href="https://github.com/hanchuan8/terria-privacy/issues" target="_blank" rel="noopener noreferrer">GitHub Issues</a> 联系开发者。</p>
+        <p>购买数据和其他私人事项请通过 <a href="mailto:hanchuandev@163.com">hanchuandev@163.com</a> 联系。请不要发送 Apple 密码、支付卡号或完整备份文件。</p>
         <p>请不要在公开 Issue 中提交宠物照片、备份文件、姓名、邮箱或其他个人信息。与本机数据相关的删除操作可以直接在应用内完成。</p>
       </article>
 
       <article class="policy policy-en" lang="en">
         <h1>Terria Privacy Policy</h1>
-        <p class="updated">Last updated: October 1, 2026</p>
-        <p>Terria is a local-first iOS app for reptile keepers. This policy explains how the current version handles records, photos, permissions, and exported files created while you use the app.</p>
+        <p class="updated">Last updated: October 14, 2026</p>
+        <p>Terria is a local-first iOS app for reptile keepers. This policy explains how the app handles records, photos, permissions, exported files, and in-app purchase data. The RevenueCat practices below apply only to versions that integrate the service, including test builds. Earlier versions without that integration do not process purchases through RevenueCat.</p>
         <p>Terria does not require an account or sign-in and does not operate its own server for centrally storing pet profiles or care records. Personal iCloud Sync is opt-in and off by default.</p>
 
         <hr>
 
         <h2>1. Scope</h2>
         <p>This policy applies to the Terria iOS app and its current public features, including pet profiles, care records, environment readings, medical and quarantine records, breeding information, supplies, reminders, reports, and backups.</p>
-        <p>This policy does not apply to Apple, GitHub, email, cloud storage, or another external service that you choose to use. When you send a file to one of those services, please review that service’s own privacy policy and terms.</p>
+        <p>Apple, RevenueCat, GitHub, email, and cloud-storage providers also process data they receive under their own policies. When you send a file to one of those services, please review that service’s own privacy policy and terms.</p>
 
         <hr>
 
@@ -203,7 +211,7 @@
         <hr>
 
         <h2>6. Retention and Deletion</h2>
-        <p>The current version has no user profiles stored on Terria servers, so there is no server account data for the developer to delete on your behalf.</p>
+        <p>Pet profiles and care records are not stored on a Terria-operated server. Versions that integrate RevenueCat retain purchase records with the third-party service, as described below.</p>
         <ul>
           <li>You can delete pets, records, photos, and other local content in the app;</li>
           <li>Deleting an in-app record or uninstalling Terria does not remove a photo already saved in Apple's Photos app; delete that separate copy in Photos if you no longer want it;</li>
@@ -213,10 +221,17 @@
           <li>Before a restore, the app creates a safety rollback copy under its existing workflow; that copy is also local device data.</li>
         </ul>
         <p>How long local data remains depends on how you edit, delete, back up, and manage the app on your device.</p>
+        <p>Uninstalling the app does not automatically delete purchase records held by Apple or RevenueCat. Retention also depends on service purposes such as access verification, restoring purchases, fraud prevention, and dispute handling, as well as the provider’s applicable obligations and retention policy. You may use the private email contact below to request access to, correction of, or deletion of purchase data. We will verify the purchase information needed and help address the request; we do not promise that every transaction record can be deleted immediately. Cancel automatic renewal or request a refund through Apple. Deleting a backend record does not perform either action.</p>
 
         <hr>
 
         <h2>7. Third-Party Services, Advertising, and Tracking</h2>
+        <h3>In-App Purchases and RevenueCat</h3>
+        <p>Versions that integrate RevenueCat use the in-app purchase management service provided by RevenueCat, Inc. to record and validate purchases, synchronize and restore purchase status, and analyze subscriptions and revenue. Apple processes payments and automatic renewals. Neither Terria nor RevenueCat reads your payment card number, Apple Account password, or complete payment details through this app.</p>
+        <p>The service processes purchase receipts or signed transactions, product and transaction identifiers, purchase and expiration dates, renewal or refund status, and store-provided price, currency, and region information. The SDK also generates and stores a random anonymous app user identifier to associate purchase records. Terria does not provide your name, email address, phone number, or a Terria sign-in account to the service. The provider may also process technical information needed to deliver the service, such as app, operating-system and SDK versions, and network request information.</p>
+        <p>Purchase data is sent to RevenueCat servers. The developer can view purchase history, subscription status, and aggregate statistics in its dashboard. Terria does not send pet profiles, care or professional records, photos, backups, or local diagnostic files to RevenueCat. Purchase data is not used for advertising, shared with data brokers, or used for cross-app advertising tracking. An anonymous purchase identifier does not mean the third party stores no data.</p>
+        <p>The app may connect through an alternative API address provided by RevenueCat to improve connectivity in some regions. This does not change the recipient or purpose. See the <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat Privacy Policy</a> for further information.</p>
+
         <p>As of the effective date of this policy, the current version:</p>
         <ul>
           <li>does not include advertising, behavioral analytics, or crash-reporting SDKs;</li>
@@ -260,6 +275,7 @@
 
         <h2>11. Contact</h2>
         <p>If you have questions about this policy or Terria’s privacy practices, contact the developer through <a href="https://github.com/hanchuan8/terria-privacy/issues" target="_blank" rel="noopener noreferrer">GitHub Issues</a>.</p>
+        <p>For purchase-data requests and other private matters, email <a href="mailto:hanchuandev@163.com">hanchuandev@163.com</a>. Do not send an Apple Account password, payment card number, or complete backup file.</p>
         <p>Please do not post pet photos, backup files, names, email addresses, or other personal information in a public issue. Local data can be deleted directly in the app.</p>
       </article>
     </main>
