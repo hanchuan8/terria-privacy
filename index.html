@@ -29,7 +29,7 @@
     <main>
       <article class="policy policy-zh" lang="zh-CN">
         <h1>栖记 Terria 隐私政策</h1>
-        <p class="updated">最后更新日期：2026 年 10 月 15 日</p>
+        <p class="updated">最后更新日期：2026 年 10 月 20 日</p>
         <p>栖记（Terria）是一款面向爬宠饲养者的本地数据优先 iOS 应用。本政策说明应用如何处理你创建的记录、照片、权限、导出文件及内购数据。下述 RevenueCat 处理仅适用于已接入该服务的版本（包括测试版本）；未接入的旧版本不会通过 RevenueCat 处理购买。</p>
         <p>我们不要求注册或登录，也不运营用于集中保存你的宠物资料和照料记录的自建服务器。个人 iCloud 同步由你主动开启，默认关闭。</p>
 
@@ -56,7 +56,7 @@
         <hr>
 
         <h2>3. 本地存储与使用方式</h2>
-        <p>当前版本的宠物档案、照料记录、环境数据、专业记录、耗材、照片和应用设置默认保存在你的设备本地应用空间中。若你在“设置 → 数据管理 → iCloud 同步”中主动开启个人同步，档案、记录与宠物当前头像缩略图会保存到当前 Apple 账户的 iCloud 私有数据库，以便在你的设备间同步；个人同步不会上传记录附件与照片原图。</p>
+        <p>当前版本的宠物档案、照料记录、环境数据、专业记录、耗材、照片和应用设置默认保存在你的设备本地应用空间中。若你在“设置 → 数据管理 → iCloud 同步”中主动开启个人同步，档案、记录与宠物当前头像缩略图会保存到当前 Apple 账户的 iCloud 私有数据库，以便在你的设备间同步；另行开启“同步照片”后，还会上传 App 保存的全部照片，包括记录附件、箱体与爬柜照片、裁切原图及首页背景。关闭同步开关不会自动删除已有云端副本。</p>
         <p>当前公开版本不提供共同照料空间。</p>
         <p>应用会在本地使用这些信息来维护数据关系、生成趋势和统计、安排本地通知，以及生成 CSV、PDF、JSON 或 ZIP 文件。栖记不会把这些内容上传到栖记运营的服务器。</p>
         <p>当前版本不使用你的记录建立广告画像、出售记录或建立跨应用用户画像。</p>
@@ -67,7 +67,7 @@
         <h3>相机</h3>
         <p>只有当你主动选择拍照或打开应用内的扫一扫时，应用才会使用相机，用于给宠物档案或照料记录添加照片，或识别宠物二维码。应用不会在后台持续使用相机。</p>
         <h3>照片</h3>
-        <p>只有当你主动选择照片时，应用才会访问你选中的内容。选中的照片会按记录需要保存在本机应用空间中，不会上传到栖记服务器。使用应用内相机拍照后，应用会请求系统照片权限，并尝试在系统“照片”App 的“栖记”或“Terria”相簿中另存一份；拒绝该权限不影响将照片添加到应用内记录。当前个人 iCloud 同步仅同步宠物当前头像的轻量缩略图，不再上传记录附件或照片原图；独立的照片同步开关已移除。若旧版本曾上传附件，升级后的同步会尝试清理这些旧云端文件；在同步完成前，旧副本可能仍留在你的 iCloud 私有空间。</p>
+        <p>只有当你主动选择照片时，应用才会访问你选中的内容。选中的照片会按记录需要保存在本机应用空间中，不会上传到栖记服务器。使用应用内相机拍照后，应用会请求系统照片权限，并尝试在系统“照片”App 的“栖记”或“Terria”相簿中另存一份；拒绝该权限不影响将照片添加到应用内记录。个人 iCloud 同步默认关闭；开启后会同步当前头像缩略图，另行开启“同步照片”后会同步 App 保存的全部照片。照片裁切可能同时保留原图和裁切结果，便于再次调整；这些文件也在照片同步范围内。</p>
         <h3>宠物二维码</h3>
         <p>相机扫码和你选取的二维码图片均在设备上识别，不会上传用于识别。二维码仅包含格式标识和宠物档案的唯一标识，不包含档案内容，也不授予其他设备访问权限；应用仅查找本机已有的对应档案。你主动导出的二维码标签图片或 PDF 可包含所选的宠物名称、物种和饲养箱名称，并通过系统分享菜单按你的选择保存或发送。</p>
         <h3>通知</h3>
@@ -78,14 +78,19 @@
 
         <h2>5. 备份、导出与分享</h2>
         <p>当你主动创建完整备份时，应用会在设备上生成 ZIP 文件。备份可能包含宠物档案、照料和专业记录、照片以及用于恢复数据的清单。</p>
-        <p>在提供“设置 → 数据管理 → 导出诊断信息”功能的版本中，应用会在本机记录预定义的记录详情、编辑、照片导入及应用前后台事件，普通日志最多保留最近 500 条。为帮助排查编辑页意外关闭，还会独立保留最多 5 段疑似异常退出事件片段；这些片段只是排查线索，不代表已确认发生崩溃。事件可包含时间、记录类型、页面来源、随机页面／编辑会话／进程标识、App 与 iOS 版本，以及照片导入的数量、字节数、格式、像素尺寸、耗时和限定的错误代码等技术信息。诊断信息不包含宠物名称、记录正文、照片内容、文件名、路径或业务记录 ID，也不是系统控制台日志或崩溃堆栈。你主动导出的 JSON 还会包含导出时间、设备类别、物理内存大小和错误代码汇总。栖记不会自动上传诊断信息；只有你主动保存或分享该文件时，它才会进入你选择的系统文件位置或分享目标。</p>
+        <p>在提供“设置 → 数据管理 → 导出诊断信息”功能的版本中，应用会在本机记录预定义的记录详情、编辑、照片导入及应用前后台事件，普通日志最多保留最近 500 条。为帮助排查编辑页意外关闭，还会独立保留最多 5 段疑似异常退出事件片段；这些片段只是排查线索，不代表已确认发生崩溃。事件可包含时间、记录类型、页面来源、随机页面／编辑会话／进程标识、App 与 iOS 版本，以及照片导入的数量、字节数、格式、像素尺寸、耗时和限定的错误代码等技术信息。上述本机操作日志不包含宠物名称、记录正文、照片内容、文件名、路径或业务记录 ID，也不是系统控制台日志或崩溃堆栈。你主动导出的 JSON 还会包含导出时间、设备类别、物理内存大小和错误代码汇总。栖记不会自动上传诊断信息；只有你主动保存或分享该文件时，它才会进入你选择的系统文件位置或分享目标。</p>
+        <h3>iCloud 同步诊断包与自愿支持邮件</h3>
+        <p>在提供此功能的版本中，iCloud 同步遇到无法读取的数据时，应用可提示下载诊断包。你可以关闭提示；只有你点击“开始只读下载”后，应用才会读取本 App 的 CloudKit 私有数据库并在本机生成文件。它不会读取其他 App 的 iCloud 数据，不会自动恢复、覆盖或上传档案。下载期间普通同步暂时暂停，结束后按你当前的开关设置恢复。</p>
+        <p>这与上面的本机操作日志不同：诊断包可能包含本机档案与同步状态原件、宠物和照料记录、备注、库存及价格、App 保存的照片原图与裁切文件，以及本 App 私有云区域中可读取的原始记录、字段、附件和删除凭证，包括历史遗留内容。还可能包含记录标识、区域与所有者标识、App 版本、时间、错误代码、读取问题清单及本机与云端核对结果。包不保证完整，不是可直接导入的备份；读取不完整也会保留已获取的内容。</p>
+        <p>打开下载页不会自动下载或发送。下载、保存和发送均由你选择，不是使用其他功能的条件。生成的 ZIP 和中间原始材料保留在 App 的本机 CloudRescue 目录中，目前不会自动到期清理。保存或分享时，文件可能进入你选择的文件位置、邮件或云盘；分享前请检查内容及接收方。</p>
+        <p>“邮箱联系开发者”仅打开收件人为 <a href="mailto:hanchuandev@163.com">hanchuandev@163.com</a> 的邮件撰写窗口，不会自动添加诊断包或发送邮件。只有你自行添加附件并发送后，开发者才会收到该包，以及邮件中的发件地址、显示姓名（如有）、问题描述和其他附件。开发者仅为排查该问题、协助恢复及必要的支持沟通使用这些材料，不用于广告、出售、用户画像或模型训练，也不发送给 RevenueCat。邮件传输与储存同时受你选择的邮件服务及收件邮箱服务商（网易 163 邮箱）的政策约束。</p>
         <p>CSV 明细、PDF 报告、JSON 或 ZIP 备份会先在本机生成。只有当你通过系统文件选择器保存文件，或通过系统分享面板选择邮件、云盘、隔空投送、文件 App 等目标时，文件才会按照你的选择离开应用。</p>
         <p>一旦文件被发送到外部服务，栖记无法控制该服务如何保存或处理文件。分享前请确认文件内容和接收方，并妥善保管导出的备份。</p>
 
         <hr>
 
         <h2>6. 保存、删除与保留</h2>
-        <p>宠物档案和照料记录不保存在栖记自建服务器上。接入 RevenueCat 的版本会在第三方服务中保留购买记录，具体边界如下。</p>
+        <p>日常档案和照料记录不集中保存在栖记自建服务器上；你主动发送的支持邮件及附件会由开发者和邮件服务商接收。接入 RevenueCat 的版本会在第三方服务中保留购买记录，具体边界如下。</p>
         <ul>
           <li>你可以在应用内删除宠物、记录、照片或其他本机内容；</li>
           <li>删除应用内记录或应用本身，不会删除此前已另存到系统“照片”App 的照片；如需移除这份副本，请在系统“照片”App 中自行删除；</li>
@@ -94,6 +99,8 @@
           <li>你之前导出的 ZIP、JSON、CSV 或 PDF 文件可能仍存在于文件 App、云盘或其他分享目标中，需要你自行删除；</li>
           <li>恢复备份前，应用会按现有流程创建安全回退副本，回退副本也属于本机数据。</li>
         </ul>
+        <p>对于你主动发送的支持邮件及诊断包，开发者仅在排查、协助恢复和必要沟通所需期间保留；处理完成后删除不再需要的诊断包和工作副本，不将其转作其他用途。若需为后续排查延长保留，会另行征得你的同意；法律要求保留的材料除外，并仅限该法定义务所需范围。</p>
+        <p>你可以随时通过 hanchuandev@163.com 撤回对后续支持处理的同意，或请求访问、更正、删除已提交的邮件及诊断材料。请提供原邮件日期或主题以便定位，开发者仅核验处理请求所必需的信息，并告知处理结果及任何依法无法删除的部分。撤回或删除不影响此前已完成的处理。开发者无法代你删除设备、发件箱、文件 App 或第三方云盘中的副本；请分别在对应位置删除。App 本机诊断原件不会因邮件请求自动删除，卸载前请先确认已有可恢复的业务备份。</p>
         <p>本机数据的最终保留时间取决于你的编辑、删除、备份和设备管理操作。</p>
         <p>卸载应用不会自动删除 Apple 或 RevenueCat 已保存的购买记录。购买数据的保留还取决于验证权益、恢复购买、防欺诈和处理争议等服务用途，以及服务方的适用义务和保留政策。你可通过下方私人邮件渠道提出购买数据的访问、更正或删除请求；我们会核对必要的购买信息并协助处理，不承诺所有交易记录都能立即删除。取消自动续费或申请退款应通过 Apple 办理，删除后台记录不能替代这两项操作。</p>
 
@@ -132,7 +139,7 @@
           <li>查看、修改或删除本机宠物和照料记录；</li>
           <li>开启或关闭相机、照片和通知权限；</li>
           <li>创建、导出、恢复或自行删除备份文件；</li>
-          <li>在支持该功能的版本中，主动导出本机诊断信息，并决定是否保存或分享；</li>
+          <li>在支持该功能的版本中，主动导出本机诊断信息，并决定是否保存或分享；也可关闭同步诊断提示，自行决定是否下载及发送原始诊断包；</li>
           <li>开启或关闭个人 iCloud 同步；</li>
           <li>通过系统分享面板决定是否以及向谁发送导出文件；</li>
           <li>删除应用及其本机数据。</li>
@@ -149,13 +156,13 @@
 
         <h2>11. 联系开发者</h2>
         <p>如果你对本政策或栖记的隐私处理有疑问，可以通过 <a href="https://github.com/hanchuan8/terria-privacy/issues" target="_blank" rel="noopener noreferrer">GitHub Issues</a> 联系开发者。</p>
-        <p>购买数据和其他私人事项请通过 <a href="mailto:hanchuandev@163.com">hanchuandev@163.com</a> 联系。请不要发送 Apple 密码、支付卡号或完整备份文件。</p>
+        <p>购买数据和其他私人事项请通过 <a href="mailto:hanchuandev@163.com">hanchuandev@163.com</a> 联系。请勿发送 Apple 密码、支付卡号或与问题无关的内容。若选择发送同步诊断包，请先查看本政策所述范围，并通过私人邮件发送，不要提交到公开 Issue。</p>
         <p>请不要在公开 Issue 中提交宠物照片、备份文件、姓名、邮箱或其他个人信息。与本机数据相关的删除操作可以直接在应用内完成。</p>
       </article>
 
       <article class="policy policy-en" lang="en">
         <h1>Terria Privacy Policy</h1>
-        <p class="updated">Last updated: October 15, 2026</p>
+        <p class="updated">Last updated: October 20, 2026</p>
         <p>Terria is a local-first iOS app for reptile keepers. This policy explains how the app handles records, photos, permissions, exported files, and in-app purchase data. The RevenueCat practices below apply only to versions that integrate the service, including test builds. Earlier versions without that integration do not process purchases through RevenueCat.</p>
         <p>Terria does not require an account or sign-in and does not operate its own server for centrally storing pet profiles or care records. Personal iCloud Sync is opt-in and off by default.</p>
 
@@ -182,7 +189,7 @@
         <hr>
 
         <h2>3. Local Storage and Use</h2>
-        <p>In the current version, pet profiles, care records, environment data, professional records, supplies, photos, and app settings are stored in the app’s local storage by default. If you enable personal sync under Settings → Data Management → iCloud Sync, profiles, records, and current pet-avatar thumbnails are also stored in the private iCloud database of the current Apple Account for synchronization across your devices. Personal sync does not upload record attachments or original photos.</p>
+        <p>In the current version, pet profiles, care records, environment data, professional records, supplies, photos, and app settings are stored in the app’s local storage by default. If you enable personal sync under Settings → Data Management → iCloud Sync, profiles, records, and current pet-avatar thumbnails are also stored in the private iCloud database of the current Apple Account for synchronization across your devices. If you also enable Sync Photos, all photos saved by the app are uploaded, including record attachments, enclosure and rack photos, crop originals, and home backgrounds. Turning sync off does not automatically delete existing cloud copies.</p>
         <p>Shared Care spaces are not available in the current public release.</p>
         <p>The app uses this information locally to maintain relationships between records, calculate trends and summaries, schedule local notifications, and generate CSV, PDF, JSON, or ZIP files. Terria does not upload this content to a server operated by Terria.</p>
         <p>The current version does not use your records to build advertising profiles, sell your records, or create a cross-app user profile.</p>
@@ -193,7 +200,7 @@
         <h3>Camera</h3>
         <p>The app uses the camera only when you choose to take a photo for a pet profile or care record, or open the in-app scanner to read a pet QR code. It does not continuously use the camera in the background.</p>
         <h3>Photos</h3>
-        <p>The app accesses existing photos only when you choose them. Selected photos are stored in the app's local space as needed for your records and are not uploaded to a Terria server. After you take a photo with the in-app camera, Terria requests access to your photo library and attempts to save a separate copy in a “栖记” or “Terria” album in Apple's Photos app. Declining that permission does not prevent you from adding the photo to an in-app record. Current personal iCloud Sync includes only lightweight thumbnails of current pet avatars; it no longer uploads record attachments or original photos. The separate photo-sync switch has been removed. If an older version uploaded attachments, the app attempts to remove those older cloud files when it next syncs; copies may remain in your private iCloud space until that sync completes.</p>
+        <p>The app accesses existing photos only when you choose them. Selected photos are stored in the app's local space as needed for your records and are not uploaded to a Terria server. After you take a photo with the in-app camera, Terria requests access to your photo library and attempts to save a separate copy in a “栖记” or “Terria” album in Apple's Photos app. Declining that permission does not prevent you from adding the photo to an in-app record. Personal iCloud Sync is off by default. When enabled, it includes current avatar thumbnails; enabling Sync Photos separately includes all photos saved by the app. Cropping may retain both an original and a cropped image for later adjustments, and those files are included in photo sync.</p>
         <h3>Pet QR Codes</h3>
         <p>Camera scans and QR images you select are decoded on your device, without uploading them for recognition. A QR code contains only a format identifier and a unique pet-profile identifier, not profile contents or permission to access data on another device. The app looks up the corresponding profile only among those already on the current device. QR label images or PDFs you export may include the pet name, species, and enclosure name you choose to display. They are saved or sent through the system share sheet at your direction.</p>
         <h3>Notifications</h3>
@@ -204,14 +211,19 @@
 
         <h2>5. Backups, Exports, and Sharing</h2>
         <p>When you actively create a complete backup, the app generates a ZIP file on your device. It may contain pet profiles, care and professional records, photos, and the manifest needed to restore the data.</p>
-        <p>In versions that offer Settings → Data Management → Export Diagnostics, the app records predefined events from record details, editing, photo imports, and app foreground or background transitions on your device. The regular log retains up to 500 recent events. Up to five separate event excerpts may also be kept to help investigate a suspected unexpected exit from an edit page; these are diagnostic clues, not confirmation of a crash. Events may include timestamps, record type, page origin, random page, edit-session and process identifiers, app and iOS versions, and technical photo-import details such as count, byte size, format, pixel dimensions, duration, and limited error codes. Diagnostics do not contain pet names, record text, photo contents, file names, paths, or business record IDs; they are not system console logs or crash stacks. A JSON file you choose to export also includes the export time, device category, physical memory size, and an error-code summary. Terria does not upload diagnostics automatically. The file goes to a system file location or sharing destination only when you choose to save or share it.</p>
+        <p>In versions that offer Settings → Data Management → Export Diagnostics, the app records predefined events from record details, editing, photo imports, and app foreground or background transitions on your device. The regular log retains up to 500 recent events. Up to five separate event excerpts may also be kept to help investigate a suspected unexpected exit from an edit page; these are diagnostic clues, not confirmation of a crash. Events may include timestamps, record type, page origin, random page, edit-session and process identifiers, app and iOS versions, and technical photo-import details such as count, byte size, format, pixel dimensions, duration, and limited error codes. These local activity logs do not contain pet names, record text, photo contents, file names, paths, or business record IDs; they are not system console logs or crash stacks. A JSON file you choose to export also includes the export time, device category, physical memory size, and an error-code summary. Terria does not upload diagnostics automatically. The file goes to a system file location or sharing destination only when you choose to save or share it.</p>
+        <h3>iCloud Sync Diagnostic Packages and Optional Support Email</h3>
+        <p>In versions that offer this feature, unreadable iCloud sync data may prompt an offer to download a diagnostic package. You can dismiss it. Only choosing Start Read-Only Download reads this app’s private CloudKit database and creates files locally. It does not read other apps’ iCloud data or automatically restore, overwrite, or upload profiles. Regular sync is paused during the download and resumes according to your current switch setting afterward.</p>
+        <p>Unlike the local activity logs above, this package may contain original local profile and sync-state files, pet and care records, notes, inventory and prices, original and cropped photos saved by the app, and readable raw records, fields, attachments, and deletion markers in this app’s private cloud zones, including legacy content. It may also contain record, zone and owner identifiers, app versions, timestamps, error codes, a list of reading issues, and local-to-cloud comparison results. It may be incomplete and is not a directly importable backup; readable material is retained even when some reads fail.</p>
+        <p>Opening the download screen does not download or send anything automatically. Downloading, saving, and sending are your choices and are not conditions for using other features. ZIP files and intermediate raw material remain in the app’s local CloudRescue directory, with no automatic expiry cleanup at present. Saving or sharing may place files in the location, email service, or cloud storage you choose. Review the contents and recipient before sharing.</p>
+        <p>Email Developer only opens a draft addressed to <a href="mailto:hanchuandev@163.com">hanchuandev@163.com</a>; it does not attach the package or send the email automatically. The developer receives the package only if you attach and send it, together with your sender address, display name if provided, problem description, and any other attachments. The developer uses these materials only to investigate the issue, assist recovery, and communicate about support, not for advertising, sale, profiling, or model training, and does not send them to RevenueCat. Email transmission and storage are also governed by your chosen email provider and the recipient mailbox provider, NetEase 163 Mail.</p>
         <p>CSV details, PDF reports, JSON files, and ZIP backups are generated locally first. A file leaves the app only when you save it through the system file picker or choose a destination such as Mail, cloud storage, AirDrop, or Files through the system share sheet.</p>
         <p>After a file is sent to an external service, Terria cannot control how that service stores or handles it. Please review the file and recipient before sharing and keep exported backups secure.</p>
 
         <hr>
 
         <h2>6. Retention and Deletion</h2>
-        <p>Pet profiles and care records are not stored on a Terria-operated server. Versions that integrate RevenueCat retain purchase records with the third-party service, as described below.</p>
+        <p>Everyday pet profiles and care records are not centrally stored on a Terria-operated server. Support emails and attachments you choose to send are received by the developer and email provider. Versions that integrate RevenueCat retain purchase records with the third-party service, as described below.</p>
         <ul>
           <li>You can delete pets, records, photos, and other local content in the app;</li>
           <li>Deleting an in-app record or uninstalling Terria does not remove a photo already saved in Apple's Photos app; delete that separate copy in Photos if you no longer want it;</li>
@@ -220,6 +232,8 @@
           <li>Previously exported ZIP, JSON, CSV, or PDF files may remain in Files, cloud storage, or another sharing destination and must be deleted by you;</li>
           <li>Before a restore, the app creates a safety rollback copy under its existing workflow; that copy is also local device data.</li>
         </ul>
+        <p>The developer retains support emails and diagnostic packages you submit only as long as needed to investigate, assist recovery, and communicate about the issue. Once the request is resolved, diagnostic packages and working copies that are no longer needed are deleted and are not repurposed. Extended retention for further investigation requires your separate consent, except where retention is legally required and limited to that obligation.</p>
+        <p>You may email hanchuandev@163.com at any time to withdraw consent for further support processing or request access to, correction of, or deletion of submitted emails and diagnostic material. Include the original email date or subject to locate the request. The developer verifies only information needed to handle it and tells you the outcome and any material that must legally be retained. Withdrawal or deletion does not undo completed processing. The developer cannot delete copies on your device, in your sent mail, Files, or third-party storage for you; delete those separately. An email request does not automatically remove local diagnostic originals. Ensure you have a recoverable business-data backup before uninstalling the app.</p>
         <p>How long local data remains depends on how you edit, delete, back up, and manage the app on your device.</p>
         <p>Uninstalling the app does not automatically delete purchase records held by Apple or RevenueCat. Retention also depends on service purposes such as access verification, restoring purchases, fraud prevention, and dispute handling, as well as the provider’s applicable obligations and retention policy. You may use the private email contact below to request access to, correction of, or deletion of purchase data. We will verify the purchase information needed and help address the request; we do not promise that every transaction record can be deleted immediately. Cancel automatic renewal or request a refund through Apple. Deleting a backend record does not perform either action.</p>
 
@@ -258,7 +272,7 @@
           <li>view, edit, or delete local pet and care records;</li>
           <li>turn camera, photo, and notification permissions on or off;</li>
           <li>create, export, restore, or delete backup files yourself;</li>
-          <li>in versions that support it, export local diagnostics and choose whether to save or share the file;</li>
+          <li>in versions that support it, export local diagnostics and choose whether to save or share the file; you can also dismiss sync diagnostic prompts and decide whether to download and send a raw diagnostic package;</li>
           <li>enable or disable personal iCloud Sync;</li>
           <li>decide whether and to whom an exported file is sent through the system share sheet;</li>
           <li>delete the app and its local data.</li>
@@ -275,7 +289,7 @@
 
         <h2>11. Contact</h2>
         <p>If you have questions about this policy or Terria’s privacy practices, contact the developer through <a href="https://github.com/hanchuan8/terria-privacy/issues" target="_blank" rel="noopener noreferrer">GitHub Issues</a>.</p>
-        <p>For purchase-data requests and other private matters, email <a href="mailto:hanchuandev@163.com">hanchuandev@163.com</a>. Do not send an Apple Account password, payment card number, or complete backup file.</p>
+        <p>For purchase-data requests and other private matters, email <a href="mailto:hanchuandev@163.com">hanchuandev@163.com</a>. Do not send an Apple Account password, payment card number, or unrelated content. If you choose to send a sync diagnostic package, review the scope described in this policy and use private email rather than a public issue.</p>
         <p>Please do not post pet photos, backup files, names, email addresses, or other personal information in a public issue. Local data can be deleted directly in the app.</p>
       </article>
     </main>
