@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#f7f7f5">
-  <meta name="description" content="栖记 Terria 隐私政策：说明 iOS 应用如何处理本地宠物档案、照料记录、照片、通知、备份、诊断信息、内购与 RevenueCat 订阅管理。">
+  <meta name="description" content="栖记 Terria 隐私政策：分别说明 iOS 与 HarmonyOS 应用的本地记录、照片、系统云同步、权限、备份、诊断及 Apple／华为购买服务。">
   <link rel="canonical" href="https://hanchuan8.github.io/terria-privacy/">
   <title>栖记 Terria 隐私政策</title>
   <link rel="stylesheet" href="./styles.css">
@@ -29,7 +29,41 @@
     <main>
       <article class="policy policy-zh" lang="zh-CN">
         <h1>栖记 Terria 隐私政策</h1>
-        <p class="updated">最后更新日期：2026 年 10 月 20 日</p>
+        <p class="updated">页面及鸿蒙章节更新日期：2026 年 10 月 25 日；iOS 条款更新日期：2026 年 10 月 20 日</p>
+        <p>本页面分别说明栖记（Terria）iOS 与 HarmonyOS 版本的数据处理方式，包括邀请测试版本。请阅读与你使用的平台对应的条款；云同步、购买服务、权限和诊断功能存在平台差异。</p>
+        <p><a href="#harmonyos-zh">阅读 HarmonyOS 版说明</a> · <a href="#ios-zh">阅读 iOS 版说明</a></p>
+        <section id="harmonyos-zh" aria-labelledby="harmonyos-title-zh">
+        <h2 id="harmonyos-title-zh">HarmonyOS 版隐私说明</h2>
+        <h3>1. 适用范围与负责人</h3>
+        <p>本章节适用于“栖记-爬宠饲养管理”HarmonyOS 应用（包名 com.hanchuan.terria），包括邀请测试版本；由栖记（Terria）开发者提供和维护，隐私联系邮箱为 <a href="mailto:hanchuandev@163.com">hanchuandev@163.com</a>。功能随版本与设备能力不同，未提供的功能不因此启用。</p>
+        <p>基础本地记录不要求注册栖记账号。华为云同步、购买与恢复权益依赖相应的系统华为账号及服务状态；应用未接入 RevenueCat，不使用 iCloud，也不把两种平台的云数据自动互通。下方 iOS 条款中的 Apple、RevenueCat、iCloud 和 CloudKit 说明仅适用于 iOS。</p>
+        <h3>2. 本地记录与照片</h3>
+        <p>你主动填写的宠物名称、物种、来源、照片、备注，喂食、体重、体长、排泄、蜕皮等照料记录，箱体、爬柜、环境读数、维护、繁育、孵化、隔离、就诊、用药、库存、数量、价格与流水，以及应用设置，保存在应用本机空间，用于档案展示、搜索、统计、照料计划、提醒、报告、导出和恢复。请勿在备注或照片中填写与饲养管理无关的个人信息。</p>
+        <p>通过系统照片选择器，只读取你选中的照片并复制到应用本机空间，不主动扫描全部相册。裁切可保留原图和结果。保存到系统相册时使用系统确认界面；你另存到相册的副本须在系统相册中另行删除。</p>
+        <h3>3. 华为系统云同步</h3>
+        <p>配置了云同步的版本通过 HarmonyOS 端云数据协同能力及华为云空间保存本应用的同步数据。系统华为账号和对应应用的云同步开关影响服务可用性；应用初始化、回到前台及资料变动后可能自动尝试同步，也提供手动同步入口。鸿蒙版不采用下方 iOS 的“iCloud 默认关闭、另开照片同步”规则；请在应用“云同步”中的“管理华为云空间同步”入口或系统华为云空间设置中检查和管理实际开关。</p>
+        <p>同步档案包含宠物与照料记录、备注、环境及专业资料、库存和价格、业务设置，以及应用保存并由当前档案引用的照片附件（包括头像、记录、箱体或爬柜照片、首页背景及保留的裁切原图）。同步还使用版本标识、时间、校验摘要、历史关系和删除凭据，用于校验、版本选择和跨设备恢复。启用相应系统同步意味着这些内容可能离开本机并由华为服务处理；栖记不将其上传到开发者运营的资料服务器。</p>
+        <p>关闭同步、删除一条记录或卸载应用不代表所有云端历史档案和旧照片立即删除；历史版本可能继续含有旧内容。请通过华为云空间提供的应用数据管理方式处理云端副本；如设备未提供相应入口，可联系华为支持。云端保留、存储地区及账号信息处理以系统服务实际适用声明为准，参阅 <a href="https://privacy-dre.dbankcdn.com/agreement/scope/huawei/cloud/privacy-statement-sdk/cn_b0_20210906_4/default/privacy-statement-sdk.htm?bgmode=white&amp;ctype=huawei&amp;timestamp=2025081117" target="_blank" rel="noopener noreferrer">华为账号与云空间隐私声明</a>。删除前请确认备份，避免其他设备继续同步旧内容。</p>
+        <h3>4. 华为应用内购买与权益</h3>
+        <p>鸿蒙版通过华为 IAP Kit 查询商品、购买、恢复和管理栖记 Pro。应用启动或回到前台时可查询当前权益；购买仅在你选择商品并在系统支付界面确认后进行。系统支付服务处理账号、交易与必要的设备及网络信息；其提供方为华为软件技术有限公司，详见 <a href="https://privacy-dre.dbankcdn.com/agreement/scope/huawei/iap/privacy-statement/cn_b0_20241022_11/default/privacy-statement-zh-cn.htm?bgmode=white&amp;ctype=huawei&amp;timestamp=2026011516" target="_blank" rel="noopener noreferrer">华为应用内支付隐私声明</a>。</p>
+        <p>应用接收并校验商品与订单标识、购买凭证、购买及到期时间、订阅、退款和权益状态，用于提供和恢复对应功能；本机会保存必要的签名权益凭据，供应用及桌面卡片核验。应用不通过此流程读取华为账号密码、支付密码或银行卡号，也不把宠物档案、照片、备份发给支付服务或 RevenueCat。购买和订阅记录由华为按其政策保留；卸载应用不会自动取消续费或删除交易记录，请在华为系统订阅管理或支付服务中办理相关请求。</p>
+        <h3>5. 系统能力、权限与桌面展示</h3>
+        <p>联网能力用于系统云同步、购买与权益查询、更新检查及你选择的字体下载。振动用于操作反馈；系统代理提醒和通知用于照料、给药、复诊或库存到期等提醒。通知可能展示宠物名称和待办文字；桌面卡片可显示宠物名称、物种、体重、头像与照料进度，请根据设备共享和锁屏情况管理展示及通知权限。</p>
+        <p>扫一扫调用华为系统 Scan Kit 界面使用相机或你选择的二维码图片，返回结果用于匹配本机已有宠物档案；二维码本身不授予远程访问权限。系统组件的授权与处理以其界面提示为准。当前应用自身未声明通讯录、位置、麦克风或健康数据权限；照片选择、文件选择及相册保存通过系统选择或确认界面完成。你可以在系统设置中管理权限，拒绝相应能力会影响对应功能。</p>
+        <h3>6. 备份、诊断与主动分享</h3>
+        <p>导出的 JSON／ZIP 备份、CSV、PDF、二维码标签和海报在本机生成，可能包含所选档案、照片、备注、价格和其他记录。只有你选择保存或分享目标后，导出文件才会交给对应文件位置、邮件、云盘或接收方；系统云同步按上文另行处理。恢复可生成本机安全回退副本，已有备份及导出文件不会随一条记录的删除而自动清除。</p>
+        <p>鸿蒙版本机诊断保留最近最多 500 条预定义的前后台、页面类别和编辑结果事件，字段为时间、事件类型与页面类别；导出时包含应用版本、构建号及导出时间。此诊断日志不含宠物名称、记录正文、业务标识、路径或照片内容，不自动上传。下方 iOS 的 CloudRescue 原始云诊断包说明不适用于鸿蒙版本机诊断。</p>
+        <p>你主动发来的支持邮件会使开发者收到发件地址、显示姓名（如有）、问题描述及你附加的文件。收件邮箱服务商为网易 163 邮箱；仅为处理问题、协助恢复及必要沟通使用这些材料，处理完成后删除不再需要的附件和工作副本，不用于广告、出售、用户画像或模型训练。若需延长排查保留会另行征求同意，法律要求保留的除外。发送前请检查内容并遮盖无关个人信息。</p>
+        <h3>7. 更新检查、字体与第三方服务</h3>
+        <p>提供更新检查的鸿蒙版本通过华为 AppGallery 系统接口查询和展示更新，自动检查默认开启，可在应用设置关闭。请求涉及识别应用和提供网络服务所必需的信息，不附带宠物档案或照片。具体可用性由设备及应用市场服务决定。</p>
+        <p>周报字体由你主动下载，从 jsDelivr 获取，失败时可尝试 GitHub 原始文件服务；请求不附带宠物记录或照片，服务方可处理 IP 地址等传输信息。字体仅缓存于应用本机空间，可在周报页面删除。当前鸿蒙工程没有接入广告、行为分析或自动崩溃上报 SDK，也不使用广告标识符建立跨应用广告画像。华为系统服务、GitHub 和你选择的外部服务按各自政策处理其收到的信息。</p>
+        <h3>8. 保存、删除、选择与联系</h3>
+        <p>本机业务资料随你的编辑、删除、备份与设备管理操作保留；卸载前请确认重要资料已有可恢复备份。本机删除或卸载不会自动清除系统相册、导出文件、邮件、第三方云盘、华为云空间历史或交易记录，请在对应位置管理。云端同步档案由华为系统服务处理，开发者不能通过本网站查看或代删你的私人云档案。</p>
+        <p>你可以查看、更正、删除本机记录，管理云空间同步和系统权限，关闭自动更新检查，选择是否下载字体、导出或分享文件，并通过 <a href="mailto:hanchuandev@163.com">hanchuandev@163.com</a> 请求访问、更正、删除已发送给开发者的支持材料或撤回后续支持处理同意。仅核验定位和处理请求所必需的信息；撤回不影响此前已完成的处理。开发者无法代删你设备和外部服务中的副本；涉及华为服务数据的请求请同时使用相应系统服务的隐私管理渠道。</p>
+        <p>未成年人应在监护人指导下使用；请勿在公开问题反馈中提交儿童信息或其他个人资料。若处理范围、服务或权限改变，将更新本政策及适用日期。本网页使用 GitHub Pages 静态托管，无自定义 Cookie、广告、分析脚本或数据提交表单；GitHub 可按其政策处理 IP 地址、浏览器类型、访问时间等请求信息。隐私事项请通过私人邮件联系，请勿发送账号密码或支付凭据。</p>
+        </section>
+        <hr>
+        <h2 id="ios-zh">iOS 版隐私说明（下方第 1—11 节）</h2>
         <p>栖记（Terria）是一款面向爬宠饲养者的本地数据优先 iOS 应用。本政策说明应用如何处理你创建的记录、照片、权限、导出文件及内购数据。下述 RevenueCat 处理仅适用于已接入该服务的版本（包括测试版本）；未接入的旧版本不会通过 RevenueCat 处理购买。</p>
         <p>我们不要求注册或登录，也不运营用于集中保存你的宠物资料和照料记录的自建服务器。个人 iCloud 同步由你主动开启，默认关闭。</p>
 
@@ -162,7 +196,41 @@
 
       <article class="policy policy-en" lang="en">
         <h1>Terria Privacy Policy</h1>
-        <p class="updated">Last updated: October 20, 2026</p>
+        <p class="updated">Page and HarmonyOS section updated: October 25, 2026; iOS terms updated: October 20, 2026</p>
+        <p>This page separately describes the data practices of Terria for iOS and HarmonyOS, including invitation test builds. Read the terms for your platform; cloud sync, purchases, permissions and diagnostics differ.</p>
+        <p><a href="#harmonyos-en">HarmonyOS notice</a> · <a href="#ios-en">iOS notice</a></p>
+        <section id="harmonyos-en" aria-labelledby="harmonyos-title-en">
+        <h2 id="harmonyos-title-en">HarmonyOS Privacy Notice</h2>
+        <h3>1. Scope and contact</h3>
+        <p>This section applies to the HarmonyOS app “栖记-爬宠饲养管理” (com.hanchuan.terria), including invitation test builds, provided and maintained by the Terria developer. Privacy contact: <a href="mailto:hanchuandev@163.com">hanchuandev@163.com</a>. Features vary by build and device; this notice does not enable unavailable features.</p>
+        <p>Local records do not require a Terria account. Huawei cloud sync, purchases and entitlement restoration depend on the system Huawei account and services. The HarmonyOS app does not integrate RevenueCat or use iCloud, and does not automatically bridge the two platforms’ cloud data. Apple, RevenueCat, iCloud and CloudKit provisions below apply only to iOS.</p>
+        <h3>2. Local records and photos</h3>
+        <p>Pet names, species, sources, photos and notes; feeding, weight, length, waste and shedding records; enclosures, racks, environment readings and maintenance; breeding, incubation, quarantine, veterinary and medication records; inventory, quantities, prices and activity; and app preferences are stored in the app’s local space. They support profiles, search, summaries, care plans, reminders, reports, exports and restoration. Avoid adding unrelated personal information to notes or photos.</p>
+        <p>The system photo picker grants access to photos you select, which are copied into the app’s local storage; the app does not scan your entire library. Cropping may retain originals and results. Saving to the system gallery uses system confirmation. Gallery copies must be deleted separately in the gallery.</p>
+        <h3>3. Huawei system cloud sync</h3>
+        <p>Builds configured for cloud sync use HarmonyOS device-cloud data collaboration and Huawei Cloud for this app’s sync data. Availability depends on the system Huawei account and the app’s cloud-sync setting. The app may attempt sync automatically at initialization, on returning to the foreground, and after data changes; manual sync is also available. The iOS rules below about opt-in iCloud and a separate photo-sync switch do not apply to HarmonyOS. Review and manage the actual setting through Manage Huawei Cloud Sync on the app’s Cloud Sync page or the system Huawei Cloud settings.</p>
+        <p>Sync archives contain pet and care records, notes, environment and professional records, inventory and prices, business preferences, and photos saved by the app and referenced by the current archive, including avatars, record attachments, enclosure and rack images, home backgrounds and retained crop originals. Revision identifiers, timestamps, checksums, history relationships and deletion markers support validation, version choices and restoration. With the relevant system sync enabled, this content may leave the device for processing by Huawei. It is not sent to a developer-operated profile server.</p>
+        <p>Turning sync off, deleting a record or uninstalling the app does not immediately delete all cloud history or older photos; previous archives may retain old content. Manage cloud copies through Huawei Cloud’s app-data controls, or contact Huawei support if those controls are unavailable on your device. Provider retention, storage regions and account processing follow the applicable system-service notice: <a href="https://privacy-dre.dbankcdn.com/agreement/scope/huawei/cloud/privacy-statement-sdk/cn_b0_20210906_4/default/privacy-statement-sdk.htm?bgmode=white&amp;ctype=huawei&amp;timestamp=2025081117" target="_blank" rel="noopener noreferrer">Huawei account and cloud privacy notice</a>. Check backups before deletion and consider other devices that may still sync older content.</p>
+        <h3>4. Huawei in-app purchases and entitlements</h3>
+        <p>The HarmonyOS app uses Huawei IAP Kit to query products, purchase, restore and manage Terria Pro. It may query current entitlements at launch and on returning to the foreground. A purchase requires your product choice and confirmation in the system payment interface. Huawei Software Technologies Co., Ltd. provides the payment service, which processes account, transaction and necessary device and network information under the <a href="https://privacy-dre.dbankcdn.com/agreement/scope/huawei/iap/privacy-statement/cn_b0_20241022_11/default/privacy-statement-zh-cn.htm?bgmode=white&amp;ctype=huawei&amp;timestamp=2026011516" target="_blank" rel="noopener noreferrer">Huawei In-App Purchases Privacy Statement</a>.</p>
+        <p>The app receives and verifies product and order identifiers, purchase receipts, purchase and expiry times, subscription, refund and entitlement status to deliver and restore features. Necessary signed entitlement evidence is stored locally for app and widget verification. This flow does not give the app your Huawei account password, payment password or card number, or send pet records, photos or backups to payment services or RevenueCat. Huawei retains transaction and subscription records under its policy. Uninstalling does not cancel renewal or erase transactions; use Huawei subscription management or payment-service channels for these requests.</p>
+        <h3>5. System capabilities, permissions and display</h3>
+        <p>Network access supports system cloud sync, purchases and entitlement checks, update checks and font downloads you choose. Vibration provides interaction feedback. System agent reminders and notifications support care, medication, appointments and inventory expiry. Notifications may display pet names and task text; home widgets may display names, species, weight, avatars and care progress. Manage these displays and notification permissions with shared-device and lock-screen visibility in mind.</p>
+        <p>The scanner uses Huawei’s system Scan Kit interface for the camera or a QR image you select; returned results locate existing local pet profiles. QR codes do not grant remote access. System-component authorization and processing follow their own interface notices. The current app itself declares no contacts, location, microphone or health-data permissions. Photo selection, file selection and gallery saves use system pickers or confirmation. You can manage permissions in system settings; declining a capability affects its corresponding feature.</p>
+        <h3>6. Backups, diagnostics and sharing</h3>
+        <p>JSON/ZIP backups, CSV, PDF, QR labels and posters are generated locally and may contain selected records, photos, notes and prices. Export files are given to a file location, email service, cloud drive or recipient only after you choose to save or share them. System cloud sync is separate, as explained above. Restoration may create local safety copies. Deleting a record does not erase existing backups or exports.</p>
+        <p>HarmonyOS local diagnostics retain up to 500 predefined foreground/background, page-category and editing-result events, containing timestamps, event types and page categories. Exports add the app version, build number and export time. This log does not include pet names, record text, business identifiers, paths or photo contents, and is not uploaded automatically. The iOS CloudRescue raw-cloud diagnostic package described below does not apply to HarmonyOS local diagnostics.</p>
+        <p>If you send support email, the developer receives your sender address, display name if available, description and files you attach. The recipient mailbox provider is NetEase 163 Mail. Materials are used only to investigate, assist recovery and communicate about support. Unneeded attachments and working copies are deleted after resolution, with separate consent for extended investigation unless retention is legally required. They are not used for advertising, sale, profiling or model training. Review and redact unrelated personal information before sending.</p>
+        <h3>7. Updates, fonts and third parties</h3>
+        <p>HarmonyOS builds with update checks query and display updates through Huawei AppGallery system interfaces. Automatic checks are on by default and can be disabled in app settings. Requests involve information needed to identify the app and deliver the network service, without pet records or photos. Availability depends on the device and app-market service.</p>
+        <p>You can choose to download weekly-poster fonts from jsDelivr, with GitHub’s raw-file service as a fallback. Requests do not include pet records or photos; providers may process IP addresses and other transfer information. Fonts are cached locally for the app and can be deleted from the poster page. The current HarmonyOS project contains no advertising, behavioral-analytics or automatic crash-reporting SDKs and does not use advertising identifiers for cross-app advertising profiles. Huawei system services, GitHub and external destinations you choose process received information under their own policies.</p>
+        <h3>8. Retention, deletion, choices and contact</h3>
+        <p>Local records remain according to your editing, deletion, backup and device-management actions. Keep recoverable backups before uninstalling. Local deletion or uninstall does not automatically erase gallery copies, exports, emails, third-party cloud drives, Huawei cloud history or transactions; manage them in their respective locations. Huawei system services handle your private cloud archives; the developer cannot view or delete them through this website.</p>
+        <p>You can view, correct and delete local records; manage cloud sync and permissions; disable automatic update checks; and decide whether to download fonts, export or share files. Email <a href="mailto:hanchuandev@163.com">hanchuandev@163.com</a> to request access to, correction or deletion of support material sent to the developer, or withdraw consent for further support processing. Only information necessary to locate and handle the request is verified. Withdrawal does not undo completed processing. The developer cannot delete your device or external-service copies; also use Huawei’s privacy controls for requests about its services.</p>
+        <p>Minors should use the app with a guardian’s guidance. Do not post children’s or other personal information in public feedback. Changes to data practices, services or permissions will be reflected in this notice and its applicable date. This static GitHub Pages website uses no custom cookies, advertising, analytics scripts or submission forms. GitHub may process IP addresses, browser types and request times under its policy. Use private email for privacy matters; do not send account passwords or payment credentials.</p>
+        </section>
+        <hr>
+        <h2 id="ios-en">iOS Privacy Notice (Sections 1–11 Below)</h2>
         <p>Terria is a local-first iOS app for reptile keepers. This policy explains how the app handles records, photos, permissions, exported files, and in-app purchase data. The RevenueCat practices below apply only to versions that integrate the service, including test builds. Earlier versions without that integration do not process purchases through RevenueCat.</p>
         <p>Terria does not require an account or sign-in and does not operate its own server for centrally storing pet profiles or care records. Personal iCloud Sync is opt-in and off by default.</p>
 
