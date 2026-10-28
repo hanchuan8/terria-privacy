@@ -28,3 +28,7 @@
 同一隐私网址新增中英文 HarmonyOS 独立章节及平台跳转链接，保留 iOS 原条款并标明适用范围与各自更新日期。按 terria-hm 当前源码披露华为系统云同步（初始化/前台/资料变化可自动触发，含照片附件，受系统设置控制）、IAP Kit、系统选图/扫码、提醒与卡片、本机500条有限诊断、备份分享、字体下载及应用市场更新；未将鸿蒙描述为iCloud默认关闭或接入RevenueCat。云历史、相册副本、导出与交易记录删除分别说明。未改App源码或iOS使用说明。
 
 核对来源：PersonalCloud.ets、OnlineServices.ets、TerriaStore.ets、HuaweiServices.ets、Diagnostics.ets、SystemSurfaces.ets、SurfaceForms.ets、AppUpdateService.ets、PosterFontProfile.ets、Index.ets与module.json5；官方华为云空间/IAP隐私声明链接列于政策内。网页披露不代表App运行中的授权时机、系统服务所有字段、双设备同步或商店审核已验收。部署和AGC填写结果见 terria-hm 的 docs/DEVELOPMENT.md 本次记录。
+
+## 2026-10-29 HarmonyOS 用户协议
+
+新增独立的 `terms.html`，供华为用户协议配置引用，正式路径为 <https://hanchuan8.github.io/terria-privacy/terms.html>。正文依据已确认草稿，生效日期2026-10-29；按用户要求不包含开发者真实姓名，署名为“栖记开发者”，仅提供公开客服邮箱。未改动既有iOS/HarmonyOS隐私网页、使用说明或加入脚本。发布需普通推送既有origin/main，并核验Pages与正式URL内容。
